@@ -41,6 +41,17 @@ struct MouseParams
 	MouseEvent event;					///< Mouse event type
 };
 
+
+/**
+\brief struct that holds custom result from YOLO Neuronal Net
+*/
+struct NNresult
+{
+	int id;			///< id of NN result class which translates to recognized card
+	cv::Rect nnBBox;	///< bounding box of recognized NN result which highlights the card
+
+};
+
 /**
 \brief Holds data of player stats
 */
@@ -69,13 +80,14 @@ struct PlayerStats
 */
 struct GameState
 {
-	PlayerStats player01;			///< playerStats object for data of player stats that are needed
-	MouseParams mouseparams;		///< mouseParams object for data of tutorial that are needed e.g. tutorial text
-	std::vector<Button> buttons;	///< buttons that are needed for the tutorial
-	bool should_exit;				///< param wether or not the game should exit after exit button was pressed
-	bool should_continue;			///< param for when user input is awaited and the tutorial needs to jump to a different point in logic function
-	bool end_turn;					///< param to signal the player that the end of the turn is reached
-	bool run_away;					///< param for when the user needs to run away and the tutorial triggers an random number as dice roll
-	bool remove_card;				///< param for when the player chooses or needs to get rid of a card he has equiped
-	cv::Size canvas_size;			///< param of the canvas size used for the buttons
+	PlayerStats player01;				///< playerStats object for data of player stats that are needed
+	MouseParams mouseparams;			///< mouseParams object for data of tutorial that are needed e.g. tutorial text
+	std::vector<NNresult> nnResults;	///< vector of NNresult objects to store all card found by YOLO Neuronal Net 
+	std::vector<Button> buttons;		///< buttons that are needed for the tutorial
+	bool should_exit;					///< param wether or not the game should exit after exit button was pressed
+	bool should_continue;				///< param for when user input is awaited and the tutorial needs to jump to a different point in logic function
+	bool end_turn;						///< param to signal the player that the end of the turn is reached
+	bool run_away;						///< param for when the user needs to run away and the tutorial triggers an random number as dice roll
+	bool remove_card;					///< param for when the player chooses or needs to get rid of a card he has equiped
+	cv::Size canvas_size;				///< param of the canvas size used for the buttons
 };

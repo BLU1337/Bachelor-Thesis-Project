@@ -14,6 +14,11 @@ set(sources
     "${CMAKE_CURRENT_SOURCE_DIR}/include/GameState.h"
     "${CMAKE_CURRENT_SOURCE_DIR}/include/InputEvent.h"
     "${CMAKE_CURRENT_SOURCE_DIR}/include/MunchkinCards.h"
+    "${CMAKE_CURRENT_SOURCE_DIR}/include/ArucoGenerator.h"
+    "${CMAKE_CURRENT_SOURCE_DIR}/include/CameraCalibration.h"
+    "${CMAKE_CURRENT_SOURCE_DIR}/include/DetectionVariants.h"
+    "${CMAKE_CURRENT_SOURCE_DIR}/include/PostProcessFunctions.h"
+    "${CMAKE_CURRENT_SOURCE_DIR}/include/YOLODataGenerator.h"
 
     "${CMAKE_CURRENT_SOURCE_DIR}/src/BadThings.cpp"
     "${CMAKE_CURRENT_SOURCE_DIR}/src/Button.cpp"
@@ -22,6 +27,11 @@ set(sources
     "${CMAKE_CURRENT_SOURCE_DIR}/src/main.cpp"
     "${CMAKE_CURRENT_SOURCE_DIR}/src/MunchkinCards.cpp"
     "${CMAKE_CURRENT_SOURCE_DIR}/src/TTMunchkinTut.cpp"
+    "${CMAKE_CURRENT_SOURCE_DIR}/src/ArucoGenerator.cpp"
+    "${CMAKE_CURRENT_SOURCE_DIR}/src/CameraCalibration.cpp"
+    "${CMAKE_CURRENT_SOURCE_DIR}/src/DetectionVariants.cpp"
+    "${CMAKE_CURRENT_SOURCE_DIR}/src/PostProcessFunctions.cpp"
+    "${CMAKE_CURRENT_SOURCE_DIR}/src/YOLODataGenerator.cpp"
 )
 
 # executable
