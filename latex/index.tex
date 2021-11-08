@@ -1,11 +1,38 @@
 \label{index_md_README}%
 \Hypertarget{index_md_README}%
  \hypertarget{index_autotoc_md1}{}\doxysection{Build Instructions}\label{index_autotoc_md1}
-Open\+CV 3 with contrib modules needs to be installed via CMake. Add a environment variable \char`\"{}\+Open\+CV\+\_\+\+DIR\char`\"{} to the path of the corresponding install root directory. Then build the project itself as usual.\hypertarget{index_autotoc_md2}{}\doxysection{Camera Calibration}\label{index_autotoc_md2}
-To calibrate Camera use pattern.\+png on a piece of cardboard. To start Calibration add \char`\"{}-\/c\char`\"{} Commandline Option. To Calibrate you need at least 15 valid pictures of Chessboard pattern. To save a picture while in calibration mode press Space. After at least 15 valid Pictures (around 50 are recommended) press Enter to start calibration Process.\hypertarget{index_autotoc_md3}{}\doxysection{Marker Generation}\label{index_autotoc_md3}
-To generate Aruco Markers add \char`\"{}-\/g\char`\"{} Commandline Option. You can Change quantity of Markers and Markerlibrary in the create\+Aruco\+Marker() Function (file \href{https://github.com/BLU1337/PPMunchkinTut/blob/master/TTMunchkinTutCMake/src/main.cpp}{\texttt{ main.\+cpp}}).\hypertarget{index_autotoc_md4}{}\doxysection{Run Program}\label{index_autotoc_md4}
-After you generated Aruco Markers and printed them out you can remove Commandline Options and start the Program. Aruco Markers 1-\/15 (except 4-\/6) are implemented atm. Corresponding Munchkincards can be found in \href{https://github.com/BLU1337/PPMunchkinTut/blob/master/TTMunchkinTutCMake/src/MunchkinCards.cpp}{\texttt{ Munchkin\+Cards.\+cpp}}.
+Open\+CV 3 with contrib modules needs to be installed via CMake. Add a environment variable \char`\"{}\+Open\+CV\+\_\+\+DIR\char`\"{} to the path of the corresponding install root directory. Then build the project itself as usual.
 
-There are some bugs left since this is only a Proof of Concept. Sometimes \mbox{\hyperlink{class_button}{Button}} have to be pressed multiple Times to work. Random Generator to run away mostly lets you run away.
+After building finished download all Files from \href{https://th-koeln.sciebo.de/s/9oSsSW6dSUsiHBE}{\texttt{ https\+://th-\/koeln.\+sciebo.\+de/s/9o\+Ss\+SW6d\+SUsi\+HBE}}. Add files from \char`\"{}obj names Dateien\char`\"{} Folder to the Project directory. Unzip other Folders and add them to the Project directory as well.\hypertarget{index_autotoc_md2}{}\doxysection{PPMunchkin\+Tut Functions}\label{index_autotoc_md2}
+A Documentation for all functions from the previous project can be found under\+: \href{https://github.com/BLU1337/PPMunchkinTut/}{\texttt{ PPMunchkin\+Tut}}\hypertarget{index_autotoc_md3}{}\doxysection{Data Generator}\label{index_autotoc_md3}
+To generate all data used for YOLO training add \char`\"{}-\/gdnn\char`\"{} Commandline Option. To change the number of images that should be generated change variable num\+\_\+images from generate\+Data\+Set\+NN function in \href{https://github.com/BLU1337/Bachelor-Thesis-Project/blob/2cba473dc29c4f76d1e17f173ee454b47ae8b677/src/YOLODataGenerator.cpp}{\texttt{ YOLOData\+Generator.\+cpp}} File. To change the number of different cards in the training pictures change variable num\+\_\+input\+Pictures from generate\+Data\+Set\+NN function in \href{https://github.com/BLU1337/Bachelor-Thesis-Project/blob/2cba473dc29c4f76d1e17f173ee454b47ae8b677/src/YOLODataGenerator.cpp}{\texttt{ YOLOData\+Generator.\+cpp}} File.\hypertarget{index_autotoc_md4}{}\doxysection{Run Tests}\label{index_autotoc_md4}
+To run different Tests that are added for this project add \char`\"{}-\/tnn\char`\"{} Commandline Option. To change YOLO Net to be tested alter variable Yolo\+Name in \href{https://github.com/BLU1337/Bachelor-Thesis-Project/blob/2cba473dc29c4f76d1e17f173ee454b47ae8b677/src/main.cpp}{\texttt{ main.\+cpp}} File. Available YOLO Nets are\+:
+\begin{DoxyItemize}
+\item 10-\/1k
+\item 10-\/5k
+\item 10-\/10k
+\item 10-\/20k
+\item 20-\/1k
+\item 20-\/5k
+\item 20-\/10k
+\item 20-\/20k
+\item 30-\/1k
+\item 30-\/5k
+\item 30-\/10k
+\item 30-\/20k
+\item 40-\/1k
+\item 40-\/5k
+\item 40-\/10k
+\item 40-\/20k
+\end{DoxyItemize}
 
-\href{https://th-koeln.sciebo.de/s/9oSsSW6dSUsiHBE}{\texttt{ https\+://th-\/koeln.\+sciebo.\+de/s/9o\+Ss\+SW6d\+SUsi\+HBE}} 
+If you test single Nets you need to change variable Munchkin\+Classes\+Num appropriate to Numbers of Classes in Net (first 2 digits of Net Name) in \href{https://github.com/BLU1337/Bachelor-Thesis-Project/blob/2cba473dc29c4f76d1e17f173ee454b47ae8b677/src/main.cpp}{\texttt{ main.\+cpp}} File.
+
+To run a Test for all YOLO Nets simply set multiple\+Tests variable to true in \href{https://github.com/BLU1337/Bachelor-Thesis-Project/blob/2cba473dc29c4f76d1e17f173ee454b47ae8b677/src/main.cpp}{\texttt{ main.\+cpp}} File.
+
+To run a different Test for YOLO Nets alter variable test\+Num in \href{https://github.com/BLU1337/Bachelor-Thesis-Project/blob/2cba473dc29c4f76d1e17f173ee454b47ae8b677/src/main.cpp}{\texttt{ main.\+cpp}} File.\hypertarget{index_autotoc_md5}{}\doxysection{Tutorial Functions}\label{index_autotoc_md5}
+To start the normal Tutorial yoe need to remove all Commandline Options. After that you can change the YOLO Net you want to run the Tutorial with just like you would change a single Net for testing.
+
+Corresponding Munchkincards can be found in \href{https://github.com/BLU1337/Bachelor-Thesis-Project/blob/2cba473dc29c4f76d1e17f173ee454b47ae8b677/src/MunchkinCards.cpp}{\texttt{ Munchkin\+Cards.\+cpp}}.
+
+There are some bugs left since this is only a Proof of Concept. Sometimes \mbox{\hyperlink{class_button}{Button}} have to be pressed multiple Times to work. 
