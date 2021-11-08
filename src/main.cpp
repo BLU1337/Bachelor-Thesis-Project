@@ -268,7 +268,7 @@ int TestYOLOMatching()
 
 }
 
-int startWebcamMonitoring(const Mat& cameraMatrix, const Mat& distanceCoefficients, float arucoSquareDimensions)
+int startWebcamMonitoring(/*const Mat& cameraMatrix, const Mat& distanceCoefficients, float arucoSquareDimensions*/)
 {
 	Mat frame;
 	gamestate.mouseparams.tutText = { "Um zu beginnen lege eine ", "Karte nach der anderen vor ", "die Kamera und klicke mit der ", "linken Maustaste auf ", "das farbige Quadrat!" };
@@ -322,7 +322,7 @@ int startWebcamMonitoring(const Mat& cameraMatrix, const Mat& distanceCoefficien
 
 		double vidFPS = vid.get(CAP_PROP_FPS);
 
-		YOLOMatching(frame, classes, confThreshold, nmsThreshold, gamestate, cards, modus, fileContent);
+		YOLOMatching(frame, classes, confThreshold, nmsThreshold, gamestate, cards, 1, fileContent);
 
 		for (int i = 0; i < gamestate.mouseparams.tutText.size(); i++)
 		{
@@ -658,9 +658,9 @@ int main(int argv, char** argc)
 		functMap[CardType::lvlUp] = cardtypeaction::lvlUp;
 
 		//cameraCalibrationProcess(cameraMatrix, distanceCoefficients);
-		loadCameraCalibration("CameraCalibration", cameraMatrix, distanceCoefficients);
+		//loadCameraCalibration("CameraCalibration", cameraMatrix, distanceCoefficients);
 		//testNNMatching(cameraMatrix, distanceCoefficients);
-		startWebcamMonitoring(cameraMatrix, distanceCoefficients, 0.005f);
+		startWebcamMonitoring(/*cameraMatrix, distanceCoefficients, 0.005f*/);
 		return 0;
 	}
 	else
