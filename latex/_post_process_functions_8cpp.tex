@@ -1,0 +1,122 @@
+\hypertarget{_post_process_functions_8cpp}{}\doxysection{Post\+Process\+Functions.\+cpp File Reference}
+\label{_post_process_functions_8cpp}\index{PostProcessFunctions.cpp@{PostProcessFunctions.cpp}}
+{\ttfamily \#include $<$Post\+Process\+Functions.\+h$>$}\newline
+{\ttfamily \#include $<$algorithm$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$cmath$>$}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacemunch__tut_a8b3f8776533907f677ec1b1cc405a70c}{Color}} \mbox{\hyperlink{_post_process_functions_8cpp_a52e9e3fc6360872b8d686585918c15e2}{choose\+Card\+Color}} (int marker\+Id, vector$<$ \mbox{\hyperlink{class_munchkin_card}{Munchkin\+Card}} $>$ \mbox{\hyperlink{main_8cpp_a79b8c8ce45e7d3aef25558104d994138}{cards}})
+\begin{DoxyCompactList}\small\item\em function to choose color e.\+g for bounding\+Boxes that is bound to type of single munchkin card. \end{DoxyCompactList}\item 
+vector$<$ String $>$ \mbox{\hyperlink{_post_process_functions_8cpp_a90f3a4976f7f8c6da2b05d227989eec0}{get\+Outputs\+Names}} (const cv\+::dnn\+::\+Net \&net)
+\begin{DoxyCompactList}\small\item\em function to get Outputs names from neuronal net. This function is based on online Tutorial by Sunita Nayak (\href{https://learnopencv.com/deep-learning-based-object-detection-using-yolov3-with-opencv-python-c}{\texttt{ https\+://learnopencv.\+com/deep-\/learning-\/based-\/object-\/detection-\/using-\/yolov3-\/with-\/opencv-\/python-\/c}}) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_post_process_functions_8cpp_afb8bed6f42c8dee01b65d725be1d2ffb}{draw\+Pred}} (int class\+Id, float conf, int left, int top, int right, int bottom, Mat \&frame, vector$<$ String $>$ \mbox{\hyperlink{main_8cpp_a2775deedf51bc51ca7463faba47dde68}{classes}}, vector$<$ \mbox{\hyperlink{class_munchkin_card}{Munchkin\+Card}} $>$ \mbox{\hyperlink{main_8cpp_a79b8c8ce45e7d3aef25558104d994138}{cards}}, int \mbox{\hyperlink{main_8cpp_a1be885a5facca88e516dfb848a50e0c9}{modus}})
+\begin{DoxyCompactList}\small\item\em function to draw prediction boxes for YOLO matching. This function is based on online Tutorial by Sunita Nayak (\href{https://learnopencv.com/deep-learning-based-object-detection-using-yolov3-with-opencv-python-c}{\texttt{ https\+://learnopencv.\+com/deep-\/learning-\/based-\/object-\/detection-\/using-\/yolov3-\/with-\/opencv-\/python-\/c}}) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_post_process_functions_8cpp_a0a0447ee06836283ac18083d1558ebac}{postprocess}} (Mat \&frame, const vector$<$ Mat $>$ \&outs, float \mbox{\hyperlink{main_8cpp_a711d7904dea3bcd0214a53bae7deee54}{conf\+Threshold}}, float \mbox{\hyperlink{main_8cpp_a625fef19ed6b12fdb3983dee443efff3}{nms\+Threshold}}, \mbox{\hyperlink{struct_game_state}{Game\+State}} \&\mbox{\hyperlink{main_8cpp_a883c09b9dfb9aad43ca10ef2d7f6b717}{gamestate}}, const vector$<$ String $>$ \&\mbox{\hyperlink{main_8cpp_a2775deedf51bc51ca7463faba47dde68}{classes}}, const vector$<$ \mbox{\hyperlink{class_munchkin_card}{Munchkin\+Card}} $>$ \&\mbox{\hyperlink{main_8cpp_a79b8c8ce45e7d3aef25558104d994138}{cards}}, int \mbox{\hyperlink{main_8cpp_a1be885a5facca88e516dfb848a50e0c9}{modus}}, \mbox{\hyperlink{structtest_output}{test\+Output}} \&file\+Content)
+\begin{DoxyCompactList}\small\item\em function which handles the post processing of outputs of YOLO matching method. This function is based on online Tutorial by Sunita Nayak (\href{https://learnopencv.com/deep-learning-based-object-detection-using-yolov3-with-opencv-python-c}{\texttt{ https\+://learnopencv.\+com/deep-\/learning-\/based-\/object-\/detection-\/using-\/yolov3-\/with-\/opencv-\/python-\/c}}) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_post_process_functions_8cpp_a52e9e3fc6360872b8d686585918c15e2}\label{_post_process_functions_8cpp_a52e9e3fc6360872b8d686585918c15e2}} 
+\index{PostProcessFunctions.cpp@{PostProcessFunctions.cpp}!chooseCardColor@{chooseCardColor}}
+\index{chooseCardColor@{chooseCardColor}!PostProcessFunctions.cpp@{PostProcessFunctions.cpp}}
+\doxysubsubsection{\texorpdfstring{chooseCardColor()}{chooseCardColor()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacemunch__tut_a8b3f8776533907f677ec1b1cc405a70c}{Color}} choose\+Card\+Color (\begin{DoxyParamCaption}\item[{int}]{marker\+Id,  }\item[{vector$<$ \mbox{\hyperlink{class_munchkin_card}{Munchkin\+Card}} $>$}]{cards }\end{DoxyParamCaption})}
+
+
+
+function to choose color e.\+g for bounding\+Boxes that is bound to type of single munchkin card. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em marker\+Id} & id of munchkin card that was detected by tutorial. (former showed marker id which was referenced with munchkin card) \\
+\hline
+{\em cards} & vector of munchkin card objects with all munchkin cards that are currently usable with the tutorial. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+cv\+::\+Color object with color for card (BGR) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_post_process_functions_8cpp_afb8bed6f42c8dee01b65d725be1d2ffb}\label{_post_process_functions_8cpp_afb8bed6f42c8dee01b65d725be1d2ffb}} 
+\index{PostProcessFunctions.cpp@{PostProcessFunctions.cpp}!drawPred@{drawPred}}
+\index{drawPred@{drawPred}!PostProcessFunctions.cpp@{PostProcessFunctions.cpp}}
+\doxysubsubsection{\texorpdfstring{drawPred()}{drawPred()}}
+{\footnotesize\ttfamily void draw\+Pred (\begin{DoxyParamCaption}\item[{int}]{class\+Id,  }\item[{float}]{conf,  }\item[{int}]{left,  }\item[{int}]{top,  }\item[{int}]{right,  }\item[{int}]{bottom,  }\item[{Mat \&}]{frame,  }\item[{vector$<$ String $>$}]{classes,  }\item[{vector$<$ \mbox{\hyperlink{class_munchkin_card}{Munchkin\+Card}} $>$}]{cards,  }\item[{int}]{modus }\end{DoxyParamCaption})}
+
+
+
+function to draw prediction boxes for YOLO matching. This function is based on online Tutorial by Sunita Nayak (\href{https://learnopencv.com/deep-learning-based-object-detection-using-yolov3-with-opencv-python-c}{\texttt{ https\+://learnopencv.\+com/deep-\/learning-\/based-\/object-\/detection-\/using-\/yolov3-\/with-\/opencv-\/python-\/c}}) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em class\+Id} & class id of found class \\
+\hline
+{\em conf} & confidence of class for predicted box \\
+\hline
+{\em left} & x value of top-\/left corner of bounding box to be drawn \\
+\hline
+{\em top} & width of bounding box to be drawn \\
+\hline
+{\em right} & y value of top-\/left corner of bounding box to be drawn \\
+\hline
+{\em bottom} & height of bounding box to be drawn \\
+\hline
+{\em frame} & Mat obejct of current frame of webcam input \\
+\hline
+{\em classes} & vector of classes name that can be found with YOLO net \\
+\hline
+{\em cards} & vector ob Munchkin\+Cards object which stores all current detectable munchkin cards \\
+\hline
+{\em modus} & modus for yolo matching (1 =$>$ live tutorial; 2 =$>$ testing with class name and confidence displayed; 4 =$>$ testing withour class name and confidence displayed) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_post_process_functions_8cpp_a90f3a4976f7f8c6da2b05d227989eec0}\label{_post_process_functions_8cpp_a90f3a4976f7f8c6da2b05d227989eec0}} 
+\index{PostProcessFunctions.cpp@{PostProcessFunctions.cpp}!getOutputsNames@{getOutputsNames}}
+\index{getOutputsNames@{getOutputsNames}!PostProcessFunctions.cpp@{PostProcessFunctions.cpp}}
+\doxysubsubsection{\texorpdfstring{getOutputsNames()}{getOutputsNames()}}
+{\footnotesize\ttfamily vector$<$String$>$ get\+Outputs\+Names (\begin{DoxyParamCaption}\item[{const cv\+::dnn\+::\+Net \&}]{net }\end{DoxyParamCaption})}
+
+
+
+function to get Outputs names from neuronal net. This function is based on online Tutorial by Sunita Nayak (\href{https://learnopencv.com/deep-learning-based-object-detection-using-yolov3-with-opencv-python-c}{\texttt{ https\+://learnopencv.\+com/deep-\/learning-\/based-\/object-\/detection-\/using-\/yolov3-\/with-\/opencv-\/python-\/c}}) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em net} & cv\+::dnn\+::\+Net reference of neuronal net that is used in tutorial. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array of names that can be found by neuronal net. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_post_process_functions_8cpp_a0a0447ee06836283ac18083d1558ebac}\label{_post_process_functions_8cpp_a0a0447ee06836283ac18083d1558ebac}} 
+\index{PostProcessFunctions.cpp@{PostProcessFunctions.cpp}!postprocess@{postprocess}}
+\index{postprocess@{postprocess}!PostProcessFunctions.cpp@{PostProcessFunctions.cpp}}
+\doxysubsubsection{\texorpdfstring{postprocess()}{postprocess()}}
+{\footnotesize\ttfamily void postprocess (\begin{DoxyParamCaption}\item[{Mat \&}]{frame,  }\item[{const vector$<$ Mat $>$ \&}]{outs,  }\item[{float}]{conf\+Threshold,  }\item[{float}]{nms\+Threshold,  }\item[{\mbox{\hyperlink{struct_game_state}{Game\+State}} \&}]{gamestate,  }\item[{const vector$<$ String $>$ \&}]{classes,  }\item[{const vector$<$ \mbox{\hyperlink{class_munchkin_card}{Munchkin\+Card}} $>$ \&}]{cards,  }\item[{int}]{modus,  }\item[{\mbox{\hyperlink{structtest_output}{test\+Output}} \&}]{file\+Content }\end{DoxyParamCaption})}
+
+
+
+function which handles the post processing of outputs of YOLO matching method. This function is based on online Tutorial by Sunita Nayak (\href{https://learnopencv.com/deep-learning-based-object-detection-using-yolov3-with-opencv-python-c}{\texttt{ https\+://learnopencv.\+com/deep-\/learning-\/based-\/object-\/detection-\/using-\/yolov3-\/with-\/opencv-\/python-\/c}}) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em frame} & Mat obejct of current frame of webcam input \\
+\hline
+{\em outs} & vector of mat objects in which outputs from YOLO net are stored in. \\
+\hline
+{\em conf\+Threshold} & threshold for confidence with which matches should be declared as valid/correct. \\
+\hline
+{\em nms\+Threshold} & Threshold for non-\/maximum suppression method to remove overlapping bounding boxes \\
+\hline
+{\em gamestate} & gamestate object which stores all necessary data for tutorial \\
+\hline
+{\em cards} & vector of munchkin cards object in which all cards are stored that can be detected with the tutorial. \\
+\hline
+{\em classes} & vector of classes name that can be found with YOLO net \\
+\hline
+{\em modus} & modus for yolo matching (1 =$>$ live tutorial; 2 =$>$ testing with class name and confidence displayed; 4 =$>$ testing withour class name and confidence displayed) \\
+\hline
+{\em file\+Content} & object of \mbox{\hyperlink{structtest_output}{test\+Output}} to store all data needed for testing \\
+\hline
+\end{DoxyParams}

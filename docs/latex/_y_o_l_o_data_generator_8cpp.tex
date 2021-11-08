@@ -1,0 +1,46 @@
+\hypertarget{_y_o_l_o_data_generator_8cpp}{}\doxysection{YOLOData\+Generator.\+cpp File Reference}
+\label{_y_o_l_o_data_generator_8cpp}\index{YOLODataGenerator.cpp@{YOLODataGenerator.cpp}}
+{\ttfamily \#include $<$YOLOData\+Generator.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}opencv2/opencv.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}opencv2/imgcodecs.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}opencv2/imgproc.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}opencv2/highgui.\+hpp\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T $>$ }\\T \mbox{\hyperlink{_y_o_l_o_data_generator_8cpp_abfb76e4b083009206ec8b9d615aa2a36}{unirand}} (T a, T b)
+\item 
+{\footnotesize template$<$typename T $>$ }\\T \mbox{\hyperlink{_y_o_l_o_data_generator_8cpp_a4e333690d9f9a3833c310db5cf8f880b}{uninorm}} (T mean, T sdev)
+\item 
+int \mbox{\hyperlink{_y_o_l_o_data_generator_8cpp_a3adebcf0a337f25c3b6f1e69a87f6045}{generate\+Dataset\+NN}} ()
+\begin{DoxyCompactList}\small\item\em generates datasets which were used to train YOLO nets. creates pictures and txt files with coordinates of bounding boxes relativ to picture size. values num\+\_\+images and num\+\_\+input\+Pictures are used for how many images and how many input pictures should be used. num\+\_\+input\+Pictures means how many of loaded munchkin cards should be used. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_y_o_l_o_data_generator_8cpp_a3adebcf0a337f25c3b6f1e69a87f6045}\label{_y_o_l_o_data_generator_8cpp_a3adebcf0a337f25c3b6f1e69a87f6045}} 
+\index{YOLODataGenerator.cpp@{YOLODataGenerator.cpp}!generateDatasetNN@{generateDatasetNN}}
+\index{generateDatasetNN@{generateDatasetNN}!YOLODataGenerator.cpp@{YOLODataGenerator.cpp}}
+\doxysubsubsection{\texorpdfstring{generateDatasetNN()}{generateDatasetNN()}}
+{\footnotesize\ttfamily int generate\+Dataset\+NN (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+generates datasets which were used to train YOLO nets. creates pictures and txt files with coordinates of bounding boxes relativ to picture size. values num\+\_\+images and num\+\_\+input\+Pictures are used for how many images and how many input pictures should be used. num\+\_\+input\+Pictures means how many of loaded munchkin cards should be used. 
+
+\begin{DoxyReturn}{Returns}
+1 when finished
+\end{DoxyReturn}
+\mbox{\Hypertarget{_y_o_l_o_data_generator_8cpp_a4e333690d9f9a3833c310db5cf8f880b}\label{_y_o_l_o_data_generator_8cpp_a4e333690d9f9a3833c310db5cf8f880b}} 
+\index{YOLODataGenerator.cpp@{YOLODataGenerator.cpp}!uninorm@{uninorm}}
+\index{uninorm@{uninorm}!YOLODataGenerator.cpp@{YOLODataGenerator.cpp}}
+\doxysubsubsection{\texorpdfstring{uninorm()}{uninorm()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T uninorm (\begin{DoxyParamCaption}\item[{T}]{mean,  }\item[{T}]{sdev }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_y_o_l_o_data_generator_8cpp_abfb76e4b083009206ec8b9d615aa2a36}\label{_y_o_l_o_data_generator_8cpp_abfb76e4b083009206ec8b9d615aa2a36}} 
+\index{YOLODataGenerator.cpp@{YOLODataGenerator.cpp}!unirand@{unirand}}
+\index{unirand@{unirand}!YOLODataGenerator.cpp@{YOLODataGenerator.cpp}}
+\doxysubsubsection{\texorpdfstring{unirand()}{unirand()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T unirand (\begin{DoxyParamCaption}\item[{T}]{a,  }\item[{T}]{b }\end{DoxyParamCaption})}
+

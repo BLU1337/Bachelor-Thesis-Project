@@ -1,0 +1,286 @@
+\@ifundefined {etoctocstyle}{\let \etoc@startlocaltoc \@gobble \let \etoc@settocdepth \@gobble \let \etoc@depthtag \@gobble \let \etoc@setlocaltop \@gobble }{}
+\contentsline {chapter}{\numberline {1}Bachelor-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Thesis-\/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Project}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Build Instructions}{1}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Camera Calibration}{1}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Marker Generation}{1}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Run Program}{1}{section.1.4}%
+\contentsline {chapter}{\numberline {2}Namespace Index}{3}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Namespace List}{3}{section.2.1}%
+\contentsline {chapter}{\numberline {3}Class Index}{5}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Class List}{5}{section.3.1}%
+\contentsline {chapter}{\numberline {4}File Index}{7}{chapter.4}%
+\contentsline {section}{\numberline {4.1}File List}{7}{section.4.1}%
+\contentsline {chapter}{\numberline {5}Namespace Documentation}{9}{chapter.5}%
+\contentsline {section}{\numberline {5.1}badthings Namespace Reference}{9}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Detailed Description}{9}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.2}Function Documentation}{9}{subsection.5.1.2}%
+\contentsline {subsubsection}{\numberline {5.1.2.1}emptyBadThings()}{9}{subsubsection.5.1.2.1}%
+\contentsline {subsubsection}{\numberline {5.1.2.2}looseClass()}{10}{subsubsection.5.1.2.2}%
+\contentsline {subsubsection}{\numberline {5.1.2.3}looseHand()}{10}{subsubsection.5.1.2.3}%
+\contentsline {subsubsection}{\numberline {5.1.2.4}looseLevel()}{10}{subsubsection.5.1.2.4}%
+\contentsline {subsubsection}{\numberline {5.1.2.5}maleDeadFemaleLevelDown()}{11}{subsubsection.5.1.2.5}%
+\contentsline {subsubsection}{\numberline {5.1.2.6}playerDies()}{11}{subsubsection.5.1.2.6}%
+\contentsline {section}{\numberline {5.2}cardtypeaction Namespace Reference}{11}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Detailed Description}{12}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Function Documentation}{12}{subsection.5.2.2}%
+\contentsline {subsubsection}{\numberline {5.2.2.1}curse()}{12}{subsubsection.5.2.2.1}%
+\contentsline {subsubsection}{\numberline {5.2.2.2}item()}{12}{subsubsection.5.2.2.2}%
+\contentsline {subsubsection}{\numberline {5.2.2.3}itemBuff()}{13}{subsubsection.5.2.2.3}%
+\contentsline {subsubsection}{\numberline {5.2.2.4}joker()}{13}{subsubsection.5.2.2.4}%
+\contentsline {subsubsection}{\numberline {5.2.2.5}lvlUp()}{13}{subsubsection.5.2.2.5}%
+\contentsline {subsubsection}{\numberline {5.2.2.6}monster()}{13}{subsubsection.5.2.2.6}%
+\contentsline {subsubsection}{\numberline {5.2.2.7}munchClass()}{14}{subsubsection.5.2.2.7}%
+\contentsline {subsubsection}{\numberline {5.2.2.8}race()}{14}{subsubsection.5.2.2.8}%
+\contentsline {section}{\numberline {5.3}constants Namespace Reference}{14}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Variable Documentation}{15}{subsection.5.3.1}%
+\contentsline {subsubsection}{\numberline {5.3.1.1}yolo\_grid\_size}{15}{subsubsection.5.3.1.1}%
+\contentsline {section}{\numberline {5.4}extras Namespace Reference}{15}{section.5.4}%
+\contentsline {section}{\numberline {5.5}munch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}tut Namespace Reference}{15}{section.5.5}%
+\contentsline {subsection}{\numberline {5.5.1}Detailed Description}{15}{subsection.5.5.1}%
+\contentsline {subsection}{\numberline {5.5.2}Typedef Documentation}{15}{subsection.5.5.2}%
+\contentsline {subsubsection}{\numberline {5.5.2.1}Color}{15}{subsubsection.5.5.2.1}%
+\contentsline {chapter}{\numberline {6}Class Documentation}{17}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Bad\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Things\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Ret\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Val Struct Reference}{17}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Button Class Reference}{17}{section.6.2}%
+\contentsline {subsection}{\numberline {6.2.1}Detailed Description}{18}{subsection.6.2.1}%
+\contentsline {subsection}{\numberline {6.2.2}Constructor \& Destructor Documentation}{18}{subsection.6.2.2}%
+\contentsline {subsubsection}{\numberline {6.2.2.1}Button()\hspace {0.1cm}{\footnotesize \ttfamily [1/3]}}{18}{subsubsection.6.2.2.1}%
+\contentsline {subsubsection}{\numberline {6.2.2.2}Button()\hspace {0.1cm}{\footnotesize \ttfamily [2/3]}}{19}{subsubsection.6.2.2.2}%
+\contentsline {subsubsection}{\numberline {6.2.2.3}Button()\hspace {0.1cm}{\footnotesize \ttfamily [3/3]}}{19}{subsubsection.6.2.2.3}%
+\contentsline {subsection}{\numberline {6.2.3}Member Function Documentation}{19}{subsection.6.2.3}%
+\contentsline {subsubsection}{\numberline {6.2.3.1}draw()}{19}{subsubsection.6.2.3.1}%
+\contentsline {subsubsection}{\numberline {6.2.3.2}operator=()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{19}{subsubsection.6.2.3.2}%
+\contentsline {subsubsection}{\numberline {6.2.3.3}operator=()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{19}{subsubsection.6.2.3.3}%
+\contentsline {subsubsection}{\numberline {6.2.3.4}poll\_click()}{20}{subsubsection.6.2.3.4}%
+\contentsline {subsection}{\numberline {6.2.4}Member Data Documentation}{20}{subsection.6.2.4}%
+\contentsline {subsubsection}{\numberline {6.2.4.1}callback}{20}{subsubsection.6.2.4.1}%
+\contentsline {subsubsection}{\numberline {6.2.4.2}color}{20}{subsubsection.6.2.4.2}%
+\contentsline {subsubsection}{\numberline {6.2.4.3}id}{20}{subsubsection.6.2.4.3}%
+\contentsline {subsubsection}{\numberline {6.2.4.4}origin}{20}{subsubsection.6.2.4.4}%
+\contentsline {subsubsection}{\numberline {6.2.4.5}rect}{21}{subsubsection.6.2.4.5}%
+\contentsline {subsubsection}{\numberline {6.2.4.6}visible}{21}{subsubsection.6.2.4.6}%
+\contentsline {section}{\numberline {6.3}Card\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Type\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Ret\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Val Struct Reference}{21}{section.6.3}%
+\contentsline {section}{\numberline {6.4}Extras\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Ret\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Val Struct Reference}{21}{section.6.4}%
+\contentsline {section}{\numberline {6.5}Game\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}State Struct Reference}{21}{section.6.5}%
+\contentsline {subsection}{\numberline {6.5.1}Detailed Description}{22}{subsection.6.5.1}%
+\contentsline {subsection}{\numberline {6.5.2}Member Data Documentation}{22}{subsection.6.5.2}%
+\contentsline {subsubsection}{\numberline {6.5.2.1}buttons}{22}{subsubsection.6.5.2.1}%
+\contentsline {subsubsection}{\numberline {6.5.2.2}canvas\_size}{22}{subsubsection.6.5.2.2}%
+\contentsline {subsubsection}{\numberline {6.5.2.3}end\_turn}{23}{subsubsection.6.5.2.3}%
+\contentsline {subsubsection}{\numberline {6.5.2.4}mouseparams}{23}{subsubsection.6.5.2.4}%
+\contentsline {subsubsection}{\numberline {6.5.2.5}nnResults}{23}{subsubsection.6.5.2.5}%
+\contentsline {subsubsection}{\numberline {6.5.2.6}player01}{23}{subsubsection.6.5.2.6}%
+\contentsline {subsubsection}{\numberline {6.5.2.7}remove\_card}{23}{subsubsection.6.5.2.7}%
+\contentsline {subsubsection}{\numberline {6.5.2.8}run\_away}{23}{subsubsection.6.5.2.8}%
+\contentsline {subsubsection}{\numberline {6.5.2.9}should\_continue}{24}{subsubsection.6.5.2.9}%
+\contentsline {subsubsection}{\numberline {6.5.2.10}should\_exit}{24}{subsubsection.6.5.2.10}%
+\contentsline {section}{\numberline {6.6}Input\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Event Struct Reference}{24}{section.6.6}%
+\contentsline {subsection}{\numberline {6.6.1}Member Data Documentation}{24}{subsection.6.6.1}%
+\contentsline {subsubsection}{\numberline {6.6.1.1}type}{24}{subsubsection.6.6.1.1}%
+\contentsline {section}{\numberline {6.7}Mouse\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Params Struct Reference}{24}{section.6.7}%
+\contentsline {subsection}{\numberline {6.7.1}Detailed Description}{25}{subsection.6.7.1}%
+\contentsline {subsection}{\numberline {6.7.2}Member Data Documentation}{25}{subsection.6.7.2}%
+\contentsline {subsubsection}{\numberline {6.7.2.1}clickP}{25}{subsubsection.6.7.2.1}%
+\contentsline {subsubsection}{\numberline {6.7.2.2}event}{25}{subsubsection.6.7.2.2}%
+\contentsline {subsubsection}{\numberline {6.7.2.3}markerCorner}{25}{subsubsection.6.7.2.3}%
+\contentsline {subsubsection}{\numberline {6.7.2.4}markerId}{26}{subsubsection.6.7.2.4}%
+\contentsline {subsubsection}{\numberline {6.7.2.5}poly}{26}{subsubsection.6.7.2.5}%
+\contentsline {subsubsection}{\numberline {6.7.2.6}tutText}{26}{subsubsection.6.7.2.6}%
+\contentsline {section}{\numberline {6.8}Munchkin\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Card Class Reference}{26}{section.6.8}%
+\contentsline {subsection}{\numberline {6.8.1}Detailed Description}{27}{subsection.6.8.1}%
+\contentsline {subsection}{\numberline {6.8.2}Constructor \& Destructor Documentation}{28}{subsection.6.8.2}%
+\contentsline {subsubsection}{\numberline {6.8.2.1}MunchkinCard()\hspace {0.1cm}{\footnotesize \ttfamily [1/4]}}{28}{subsubsection.6.8.2.1}%
+\contentsline {subsubsection}{\numberline {6.8.2.2}MunchkinCard()\hspace {0.1cm}{\footnotesize \ttfamily [2/4]}}{28}{subsubsection.6.8.2.2}%
+\contentsline {subsubsection}{\numberline {6.8.2.3}MunchkinCard()\hspace {0.1cm}{\footnotesize \ttfamily [3/4]}}{29}{subsubsection.6.8.2.3}%
+\contentsline {subsubsection}{\numberline {6.8.2.4}MunchkinCard()\hspace {0.1cm}{\footnotesize \ttfamily [4/4]}}{29}{subsubsection.6.8.2.4}%
+\contentsline {subsection}{\numberline {6.8.3}Member Function Documentation}{29}{subsection.6.8.3}%
+\contentsline {subsubsection}{\numberline {6.8.3.1}cardsConstr()}{29}{subsubsection.6.8.3.1}%
+\contentsline {subsubsection}{\numberline {6.8.3.2}operator=()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{29}{subsubsection.6.8.3.2}%
+\contentsline {subsubsection}{\numberline {6.8.3.3}operator=()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{30}{subsubsection.6.8.3.3}%
+\contentsline {subsection}{\numberline {6.8.4}Member Data Documentation}{30}{subsection.6.8.4}%
+\contentsline {subsubsection}{\numberline {6.8.4.1}badThings}{30}{subsubsection.6.8.4.1}%
+\contentsline {subsubsection}{\numberline {6.8.4.2}badThingsFunc}{30}{subsubsection.6.8.4.2}%
+\contentsline {subsubsection}{\numberline {6.8.4.3}bonis}{30}{subsubsection.6.8.4.3}%
+\contentsline {subsubsection}{\numberline {6.8.4.4}cardName}{30}{subsubsection.6.8.4.4}%
+\contentsline {subsubsection}{\numberline {6.8.4.5}debuff}{30}{subsubsection.6.8.4.5}%
+\contentsline {subsubsection}{\numberline {6.8.4.6}effect}{31}{subsubsection.6.8.4.6}%
+\contentsline {subsubsection}{\numberline {6.8.4.7}handsNeeded}{31}{subsubsection.6.8.4.7}%
+\contentsline {subsubsection}{\numberline {6.8.4.8}itemEffect}{31}{subsubsection.6.8.4.8}%
+\contentsline {subsubsection}{\numberline {6.8.4.9}itemLarge}{31}{subsubsection.6.8.4.9}%
+\contentsline {subsubsection}{\numberline {6.8.4.10}itemNeeds}{31}{subsubsection.6.8.4.10}%
+\contentsline {subsubsection}{\numberline {6.8.4.11}itemType}{31}{subsubsection.6.8.4.11}%
+\contentsline {subsubsection}{\numberline {6.8.4.12}itemValue}{32}{subsubsection.6.8.4.12}%
+\contentsline {subsubsection}{\numberline {6.8.4.13}lvlUp}{32}{subsubsection.6.8.4.13}%
+\contentsline {subsubsection}{\numberline {6.8.4.14}markerID}{32}{subsubsection.6.8.4.14}%
+\contentsline {subsubsection}{\numberline {6.8.4.15}monsStrength}{32}{subsubsection.6.8.4.15}%
+\contentsline {subsubsection}{\numberline {6.8.4.16}parentCardType}{32}{subsubsection.6.8.4.16}%
+\contentsline {subsubsection}{\numberline {6.8.4.17}strengthBoni}{32}{subsubsection.6.8.4.17}%
+\contentsline {subsubsection}{\numberline {6.8.4.18}treasures}{33}{subsubsection.6.8.4.18}%
+\contentsline {subsubsection}{\numberline {6.8.4.19}type}{33}{subsubsection.6.8.4.19}%
+\contentsline {section}{\numberline {6.9}NNresult Struct Reference}{33}{section.6.9}%
+\contentsline {subsection}{\numberline {6.9.1}Detailed Description}{33}{subsection.6.9.1}%
+\contentsline {subsection}{\numberline {6.9.2}Member Data Documentation}{33}{subsection.6.9.2}%
+\contentsline {subsubsection}{\numberline {6.9.2.1}id}{33}{subsubsection.6.9.2.1}%
+\contentsline {subsubsection}{\numberline {6.9.2.2}nnBBox}{34}{subsubsection.6.9.2.2}%
+\contentsline {section}{\numberline {6.10}Player\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Stats Struct Reference}{34}{section.6.10}%
+\contentsline {subsection}{\numberline {6.10.1}Detailed Description}{35}{subsection.6.10.1}%
+\contentsline {subsection}{\numberline {6.10.2}Member Data Documentation}{35}{subsection.6.10.2}%
+\contentsline {subsubsection}{\numberline {6.10.2.1}availableClasses}{35}{subsubsection.6.10.2.1}%
+\contentsline {subsubsection}{\numberline {6.10.2.2}availableRaces}{35}{subsubsection.6.10.2.2}%
+\contentsline {subsubsection}{\numberline {6.10.2.3}bonis}{35}{subsubsection.6.10.2.3}%
+\contentsline {subsubsection}{\numberline {6.10.2.4}carriesLargeItems}{35}{subsubsection.6.10.2.4}%
+\contentsline {subsubsection}{\numberline {6.10.2.5}curses}{35}{subsubsection.6.10.2.5}%
+\contentsline {subsubsection}{\numberline {6.10.2.6}hands}{36}{subsubsection.6.10.2.6}%
+\contentsline {subsubsection}{\numberline {6.10.2.7}hasArmor}{36}{subsubsection.6.10.2.7}%
+\contentsline {subsubsection}{\numberline {6.10.2.8}hasHat}{36}{subsubsection.6.10.2.8}%
+\contentsline {subsubsection}{\numberline {6.10.2.9}hasShoes}{36}{subsubsection.6.10.2.9}%
+\contentsline {subsubsection}{\numberline {6.10.2.10}itemEffects}{36}{subsubsection.6.10.2.10}%
+\contentsline {subsubsection}{\numberline {6.10.2.11}lvl}{36}{subsubsection.6.10.2.11}%
+\contentsline {subsubsection}{\numberline {6.10.2.12}munchClasses}{37}{subsubsection.6.10.2.12}%
+\contentsline {subsubsection}{\numberline {6.10.2.13}munchRaces}{37}{subsubsection.6.10.2.13}%
+\contentsline {subsubsection}{\numberline {6.10.2.14}runStrength}{37}{subsubsection.6.10.2.14}%
+\contentsline {subsubsection}{\numberline {6.10.2.15}sex}{37}{subsubsection.6.10.2.15}%
+\contentsline {subsubsection}{\numberline {6.10.2.16}strength}{37}{subsubsection.6.10.2.16}%
+\contentsline {section}{\numberline {6.11}test\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Output Struct Reference}{37}{section.6.11}%
+\contentsline {subsection}{\numberline {6.11.1}Detailed Description}{38}{subsection.6.11.1}%
+\contentsline {subsection}{\numberline {6.11.2}Member Data Documentation}{38}{subsection.6.11.2}%
+\contentsline {subsubsection}{\numberline {6.11.2.1}allClasses}{38}{subsubsection.6.11.2.1}%
+\contentsline {subsubsection}{\numberline {6.11.2.2}allPropability}{38}{subsubsection.6.11.2.2}%
+\contentsline {subsubsection}{\numberline {6.11.2.3}csvFileString}{39}{subsubsection.6.11.2.3}%
+\contentsline {subsubsection}{\numberline {6.11.2.4}csvSingleFile}{39}{subsubsection.6.11.2.4}%
+\contentsline {subsubsection}{\numberline {6.11.2.5}debugSingleOutput}{39}{subsubsection.6.11.2.5}%
+\contentsline {subsubsection}{\numberline {6.11.2.6}debugTick}{39}{subsubsection.6.11.2.6}%
+\contentsline {subsubsection}{\numberline {6.11.2.7}fileCounter}{39}{subsubsection.6.11.2.7}%
+\contentsline {subsubsection}{\numberline {6.11.2.8}fileString}{39}{subsubsection.6.11.2.8}%
+\contentsline {subsubsection}{\numberline {6.11.2.9}inferenceTime}{40}{subsubsection.6.11.2.9}%
+\contentsline {subsubsection}{\numberline {6.11.2.10}MunchkinClassesNum}{40}{subsubsection.6.11.2.10}%
+\contentsline {subsubsection}{\numberline {6.11.2.11}singleFile}{40}{subsubsection.6.11.2.11}%
+\contentsline {subsubsection}{\numberline {6.11.2.12}YoloName}{40}{subsubsection.6.11.2.12}%
+\contentsline {chapter}{\numberline {7}File Documentation}{41}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Aruco\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Generator.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp File Reference}{41}{section.7.1}%
+\contentsline {subsection}{\numberline {7.1.1}Function Documentation}{41}{subsection.7.1.1}%
+\contentsline {subsubsection}{\numberline {7.1.1.1}createArucoMarkers()}{41}{subsubsection.7.1.1.1}%
+\contentsline {section}{\numberline {7.2}Aruco\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Generator.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{41}{section.7.2}%
+\contentsline {subsection}{\numberline {7.2.1}Detailed Description}{42}{subsection.7.2.1}%
+\contentsline {subsection}{\numberline {7.2.2}Function Documentation}{42}{subsection.7.2.2}%
+\contentsline {subsubsection}{\numberline {7.2.2.1}createArucoMarkers()}{42}{subsubsection.7.2.2.1}%
+\contentsline {section}{\numberline {7.3}Bad\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Things.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp File Reference}{42}{section.7.3}%
+\contentsline {section}{\numberline {7.4}Bad\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Things.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{42}{section.7.4}%
+\contentsline {subsection}{\numberline {7.4.1}Detailed Description}{43}{subsection.7.4.1}%
+\contentsline {subsection}{\numberline {7.4.2}Typedef Documentation}{43}{subsection.7.4.2}%
+\contentsline {subsubsection}{\numberline {7.4.2.1}BadThingsFunc}{43}{subsubsection.7.4.2.1}%
+\contentsline {section}{\numberline {7.5}Button.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp File Reference}{44}{section.7.5}%
+\contentsline {section}{\numberline {7.6}Button.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{44}{section.7.6}%
+\contentsline {subsection}{\numberline {7.6.1}Detailed Description}{44}{subsection.7.6.1}%
+\contentsline {subsection}{\numberline {7.6.2}Typedef Documentation}{44}{subsection.7.6.2}%
+\contentsline {subsubsection}{\numberline {7.6.2.1}button\_callback}{45}{subsubsection.7.6.2.1}%
+\contentsline {subsection}{\numberline {7.6.3}Enumeration Type Documentation}{45}{subsection.7.6.3}%
+\contentsline {subsubsection}{\numberline {7.6.3.1}ButtonOrigin}{45}{subsubsection.7.6.3.1}%
+\contentsline {section}{\numberline {7.7}Camera\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Calibration.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp File Reference}{45}{section.7.7}%
+\contentsline {subsection}{\numberline {7.7.1}Function Documentation}{46}{subsection.7.7.1}%
+\contentsline {subsubsection}{\numberline {7.7.1.1}cameraCalibration()}{46}{subsubsection.7.7.1.1}%
+\contentsline {subsubsection}{\numberline {7.7.1.2}cameraCalibrationProcess()}{46}{subsubsection.7.7.1.2}%
+\contentsline {subsubsection}{\numberline {7.7.1.3}createKnownBoardPositions()}{46}{subsubsection.7.7.1.3}%
+\contentsline {subsubsection}{\numberline {7.7.1.4}getChessboardCorners()}{47}{subsubsection.7.7.1.4}%
+\contentsline {subsubsection}{\numberline {7.7.1.5}loadCameraCalibration()}{47}{subsubsection.7.7.1.5}%
+\contentsline {subsubsection}{\numberline {7.7.1.6}saveCameraCalibration()}{48}{subsubsection.7.7.1.6}%
+\contentsline {section}{\numberline {7.8}Camera\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Calibration.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{48}{section.7.8}%
+\contentsline {subsection}{\numberline {7.8.1}Detailed Description}{49}{subsection.7.8.1}%
+\contentsline {subsection}{\numberline {7.8.2}Function Documentation}{49}{subsection.7.8.2}%
+\contentsline {subsubsection}{\numberline {7.8.2.1}cameraCalibration()}{49}{subsubsection.7.8.2.1}%
+\contentsline {subsubsection}{\numberline {7.8.2.2}cameraCalibrationProcess()}{49}{subsubsection.7.8.2.2}%
+\contentsline {subsubsection}{\numberline {7.8.2.3}createKnownBoardPositions()}{50}{subsubsection.7.8.2.3}%
+\contentsline {subsubsection}{\numberline {7.8.2.4}getChessboardCorners()}{50}{subsubsection.7.8.2.4}%
+\contentsline {subsubsection}{\numberline {7.8.2.5}loadCameraCalibration()}{50}{subsubsection.7.8.2.5}%
+\contentsline {subsubsection}{\numberline {7.8.2.6}saveCameraCalibration()}{51}{subsubsection.7.8.2.6}%
+\contentsline {section}{\numberline {7.9}Card\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Type\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Actions.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp File Reference}{51}{section.7.9}%
+\contentsline {subsection}{\numberline {7.9.1}Function Documentation}{52}{subsection.7.9.1}%
+\contentsline {subsubsection}{\numberline {7.9.1.1}runAway()}{52}{subsubsection.7.9.1.1}%
+\contentsline {section}{\numberline {7.10}Card\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Type\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Actions.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{52}{section.7.10}%
+\contentsline {subsection}{\numberline {7.10.1}Detailed Description}{53}{subsection.7.10.1}%
+\contentsline {subsection}{\numberline {7.10.2}Typedef Documentation}{53}{subsection.7.10.2}%
+\contentsline {subsubsection}{\numberline {7.10.2.1}CardTypeFunc}{53}{subsubsection.7.10.2.1}%
+\contentsline {section}{\numberline {7.11}common.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{53}{section.7.11}%
+\contentsline {subsection}{\numberline {7.11.1}Detailed Description}{54}{subsection.7.11.1}%
+\contentsline {section}{\numberline {7.12}Detection\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Variants.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp File Reference}{54}{section.7.12}%
+\contentsline {subsection}{\numberline {7.12.1}Function Documentation}{54}{subsection.7.12.1}%
+\contentsline {subsubsection}{\numberline {7.12.1.1}ArucoMatching()}{54}{subsubsection.7.12.1.1}%
+\contentsline {subsubsection}{\numberline {7.12.1.2}YOLOMatching()}{55}{subsubsection.7.12.1.2}%
+\contentsline {section}{\numberline {7.13}Detection\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Variants.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{55}{section.7.13}%
+\contentsline {subsection}{\numberline {7.13.1}Detailed Description}{56}{subsection.7.13.1}%
+\contentsline {subsection}{\numberline {7.13.2}Function Documentation}{56}{subsection.7.13.2}%
+\contentsline {subsubsection}{\numberline {7.13.2.1}ArucoMatching()}{56}{subsubsection.7.13.2.1}%
+\contentsline {subsubsection}{\numberline {7.13.2.2}YOLOMatching()}{57}{subsubsection.7.13.2.2}%
+\contentsline {section}{\numberline {7.14}Extras.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp File Reference}{57}{section.7.14}%
+\contentsline {section}{\numberline {7.15}Extras.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{57}{section.7.15}%
+\contentsline {subsection}{\numberline {7.15.1}Typedef Documentation}{58}{subsection.7.15.1}%
+\contentsline {subsubsection}{\numberline {7.15.1.1}ExtrasFunc}{58}{subsubsection.7.15.1.1}%
+\contentsline {section}{\numberline {7.16}Game\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}State.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{58}{section.7.16}%
+\contentsline {subsection}{\numberline {7.16.1}Detailed Description}{59}{subsection.7.16.1}%
+\contentsline {subsection}{\numberline {7.16.2}Enumeration Type Documentation}{59}{subsection.7.16.2}%
+\contentsline {subsubsection}{\numberline {7.16.2.1}MouseEvent}{59}{subsubsection.7.16.2.1}%
+\contentsline {section}{\numberline {7.17}Input\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Event.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{59}{section.7.17}%
+\contentsline {subsection}{\numberline {7.17.1}Detailed Description}{60}{subsection.7.17.1}%
+\contentsline {subsection}{\numberline {7.17.2}Enumeration Type Documentation}{60}{subsection.7.17.2}%
+\contentsline {subsubsection}{\numberline {7.17.2.1}EventType}{60}{subsubsection.7.17.2.1}%
+\contentsline {section}{\numberline {7.18}main.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp File Reference}{60}{section.7.18}%
+\contentsline {subsection}{\numberline {7.18.1}Function Documentation}{61}{subsection.7.18.1}%
+\contentsline {subsubsection}{\numberline {7.18.1.1}button\_continue()}{62}{subsubsection.7.18.1.1}%
+\contentsline {subsubsection}{\numberline {7.18.1.2}button\_end\_turn()}{62}{subsubsection.7.18.1.2}%
+\contentsline {subsubsection}{\numberline {7.18.1.3}button\_exit()}{62}{subsubsection.7.18.1.3}%
+\contentsline {subsubsection}{\numberline {7.18.1.4}callBackFunction()}{62}{subsubsection.7.18.1.4}%
+\contentsline {subsubsection}{\numberline {7.18.1.5}logic()}{62}{subsubsection.7.18.1.5}%
+\contentsline {subsubsection}{\numberline {7.18.1.6}main()}{62}{subsubsection.7.18.1.6}%
+\contentsline {subsubsection}{\numberline {7.18.1.7}startWebcamMonitoring()}{63}{subsubsection.7.18.1.7}%
+\contentsline {subsubsection}{\numberline {7.18.1.8}testArucoMatching()}{63}{subsubsection.7.18.1.8}%
+\contentsline {subsubsection}{\numberline {7.18.1.9}TestYOLOMatching()}{63}{subsubsection.7.18.1.9}%
+\contentsline {subsection}{\numberline {7.18.2}Variable Documentation}{63}{subsection.7.18.2}%
+\contentsline {subsubsection}{\numberline {7.18.2.1}arucoSquareDimension}{63}{subsubsection.7.18.2.1}%
+\contentsline {subsubsection}{\numberline {7.18.2.2}calbirationSquareDimension}{63}{subsubsection.7.18.2.2}%
+\contentsline {subsubsection}{\numberline {7.18.2.3}cards}{63}{subsubsection.7.18.2.3}%
+\contentsline {subsubsection}{\numberline {7.18.2.4}chessboardDimensions}{64}{subsubsection.7.18.2.4}%
+\contentsline {subsubsection}{\numberline {7.18.2.5}classes}{64}{subsubsection.7.18.2.5}%
+\contentsline {subsubsection}{\numberline {7.18.2.6}confThreshold}{64}{subsubsection.7.18.2.6}%
+\contentsline {subsubsection}{\numberline {7.18.2.7}debugSingleOutput}{64}{subsubsection.7.18.2.7}%
+\contentsline {subsubsection}{\numberline {7.18.2.8}functMap}{64}{subsubsection.7.18.2.8}%
+\contentsline {subsubsection}{\numberline {7.18.2.9}gamestate}{64}{subsubsection.7.18.2.9}%
+\contentsline {subsubsection}{\numberline {7.18.2.10}modus}{64}{subsubsection.7.18.2.10}%
+\contentsline {subsubsection}{\numberline {7.18.2.11}multipleTests}{64}{subsubsection.7.18.2.11}%
+\contentsline {subsubsection}{\numberline {7.18.2.12}MunchkinClassesNum}{65}{subsubsection.7.18.2.12}%
+\contentsline {subsubsection}{\numberline {7.18.2.13}nmsThreshold}{65}{subsubsection.7.18.2.13}%
+\contentsline {subsubsection}{\numberline {7.18.2.14}testNum}{65}{subsubsection.7.18.2.14}%
+\contentsline {subsubsection}{\numberline {7.18.2.15}YoloName}{65}{subsubsection.7.18.2.15}%
+\contentsline {section}{\numberline {7.19}Munchkin\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Cards.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp File Reference}{65}{section.7.19}%
+\contentsline {section}{\numberline {7.20}Munchkin\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Cards.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{65}{section.7.20}%
+\contentsline {subsection}{\numberline {7.20.1}Detailed Description}{66}{subsection.7.20.1}%
+\contentsline {subsection}{\numberline {7.20.2}Enumeration Type Documentation}{66}{subsection.7.20.2}%
+\contentsline {subsubsection}{\numberline {7.20.2.1}CardType}{66}{subsubsection.7.20.2.1}%
+\contentsline {subsubsection}{\numberline {7.20.2.2}ItemType}{67}{subsubsection.7.20.2.2}%
+\contentsline {subsubsection}{\numberline {7.20.2.3}ParentCardType}{67}{subsubsection.7.20.2.3}%
+\contentsline {section}{\numberline {7.21}Post\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Process\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Functions.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp File Reference}{67}{section.7.21}%
+\contentsline {subsection}{\numberline {7.21.1}Function Documentation}{68}{subsection.7.21.1}%
+\contentsline {subsubsection}{\numberline {7.21.1.1}chooseCardColor()}{68}{subsubsection.7.21.1.1}%
+\contentsline {subsubsection}{\numberline {7.21.1.2}drawPred()}{68}{subsubsection.7.21.1.2}%
+\contentsline {subsubsection}{\numberline {7.21.1.3}getOutputsNames()}{69}{subsubsection.7.21.1.3}%
+\contentsline {subsubsection}{\numberline {7.21.1.4}postprocess()}{69}{subsubsection.7.21.1.4}%
+\contentsline {section}{\numberline {7.22}Post\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Process\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Functions.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{70}{section.7.22}%
+\contentsline {subsection}{\numberline {7.22.1}Detailed Description}{71}{subsection.7.22.1}%
+\contentsline {subsection}{\numberline {7.22.2}Function Documentation}{71}{subsection.7.22.2}%
+\contentsline {subsubsection}{\numberline {7.22.2.1}chooseCardColor()}{71}{subsubsection.7.22.2.1}%
+\contentsline {subsubsection}{\numberline {7.22.2.2}drawPred()}{71}{subsubsection.7.22.2.2}%
+\contentsline {subsubsection}{\numberline {7.22.2.3}getOutputsNames()}{72}{subsubsection.7.22.2.3}%
+\contentsline {subsubsection}{\numberline {7.22.2.4}postprocess()}{72}{subsubsection.7.22.2.4}%
+\contentsline {section}{\numberline {7.23}README.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}md File Reference}{73}{section.7.23}%
+\contentsline {section}{\numberline {7.24}TTMunchkin\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tut.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp File Reference}{73}{section.7.24}%
+\contentsline {section}{\numberline {7.25}YOLOData\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Generator.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp File Reference}{73}{section.7.25}%
+\contentsline {subsection}{\numberline {7.25.1}Function Documentation}{73}{subsection.7.25.1}%
+\contentsline {subsubsection}{\numberline {7.25.1.1}generateDatasetNN()}{74}{subsubsection.7.25.1.1}%
+\contentsline {subsubsection}{\numberline {7.25.1.2}uninorm()}{74}{subsubsection.7.25.1.2}%
+\contentsline {subsubsection}{\numberline {7.25.1.3}unirand()}{74}{subsubsection.7.25.1.3}%
+\contentsline {section}{\numberline {7.26}YOLOData\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Generator.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{74}{section.7.26}%
+\contentsline {subsection}{\numberline {7.26.1}Detailed Description}{75}{subsection.7.26.1}%
+\contentsline {subsection}{\numberline {7.26.2}Function Documentation}{75}{subsection.7.26.2}%
+\contentsline {subsubsection}{\numberline {7.26.2.1}generateDatasetNN()}{75}{subsubsection.7.26.2.1}%
+\contentsline {subsubsection}{\numberline {7.26.2.2}uninorm()}{75}{subsubsection.7.26.2.2}%
+\contentsline {subsubsection}{\numberline {7.26.2.3}unirand()}{75}{subsubsection.7.26.2.3}%
+\contentsline {chapter}{Index}{77}{section*.54}%

@@ -1,0 +1,169 @@
+\hypertarget{structtest_output}{}\doxysection{test\+Output Struct Reference}
+\label{structtest_output}\index{testOutput@{testOutput}}
+
+
+struct for object that is used for the YOLO tests.  
+
+
+
+
+{\ttfamily \#include $<$common.\+h$>$}
+
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+vector$<$ stringstream $>$ \mbox{\hyperlink{structtest_output_a427ad18372a271a60a677a428f5faab5}{single\+File}}
+\begin{DoxyCompactList}\small\item\em vector of stringstreams for single test output files \end{DoxyCompactList}\item 
+vector$<$ stringstream $>$ \mbox{\hyperlink{structtest_output_a385995449db4987d82a805e03dbb9f94}{csv\+Single\+File}}
+\begin{DoxyCompactList}\small\item\em vector of stringstreams for single test output csv files \end{DoxyCompactList}\item 
+stringstream \mbox{\hyperlink{structtest_output_a97b8962dec4bb5f0e400ee405e1c473d}{file\+String}}
+\begin{DoxyCompactList}\small\item\em stringstream for the whole test output file \end{DoxyCompactList}\item 
+stringstream \mbox{\hyperlink{structtest_output_a90c02f7f60de2e37119417e0692d2c4a}{csv\+File\+String}}
+\begin{DoxyCompactList}\small\item\em stringstream for the whole test output csv file \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{structtest_output_ab56acfb430edce0f7e8823873e951873}{file\+Counter}}
+\begin{DoxyCompactList}\small\item\em counter for how many files are already written \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{structtest_output_abc84d5c37b4bdac5618e594fc0c08a6f}{debug\+Tick}}
+\begin{DoxyCompactList}\small\item\em current tick (seconds) for test \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{structtest_output_a50e63b51a8b87d3c61d4c769c33f9267}{debug\+Single\+Output}}
+\begin{DoxyCompactList}\small\item\em tick value for when a single output file should be generated \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{structtest_output_a205cfa8d0592a21814e85574c8e632d8}{all\+Classes}}
+\begin{DoxyCompactList}\small\item\em adds up the munchkin classes found in a single frame to calculate the average class count \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{structtest_output_a9d951744e91be8c4804231424b7a15b0}{inference\+Time}}
+\begin{DoxyCompactList}\small\item\em adds up the inference time for each frame to calculate the average inferance time \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{structtest_output_afbd03ce2eb3ec5a3cafcbfd4b2e613a2}{all\+Propability}}
+\begin{DoxyCompactList}\small\item\em double value to add up all class propabilities to calculate the average class propability \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{structtest_output_a9036df2e5a0215c4b22feb1576f1cfe3}{Yolo\+Name}}
+\begin{DoxyCompactList}\small\item\em name of yolo net that is tested \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{structtest_output_a2f3b6ba984d92ae828c1e155e7648148}{Munchkin\+Classes\+Num}}
+\begin{DoxyCompactList}\small\item\em Number of munchkin classes (cards) that are used in the test. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+struct for object that is used for the YOLO tests. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structtest_output_a205cfa8d0592a21814e85574c8e632d8}\label{structtest_output_a205cfa8d0592a21814e85574c8e632d8}} 
+\index{testOutput@{testOutput}!allClasses@{allClasses}}
+\index{allClasses@{allClasses}!testOutput@{testOutput}}
+\doxysubsubsection{\texorpdfstring{allClasses}{allClasses}}
+{\footnotesize\ttfamily double test\+Output\+::all\+Classes}
+
+
+
+adds up the munchkin classes found in a single frame to calculate the average class count 
+
+\mbox{\Hypertarget{structtest_output_afbd03ce2eb3ec5a3cafcbfd4b2e613a2}\label{structtest_output_afbd03ce2eb3ec5a3cafcbfd4b2e613a2}} 
+\index{testOutput@{testOutput}!allPropability@{allPropability}}
+\index{allPropability@{allPropability}!testOutput@{testOutput}}
+\doxysubsubsection{\texorpdfstring{allPropability}{allPropability}}
+{\footnotesize\ttfamily double test\+Output\+::all\+Propability}
+
+
+
+double value to add up all class propabilities to calculate the average class propability 
+
+\mbox{\Hypertarget{structtest_output_a90c02f7f60de2e37119417e0692d2c4a}\label{structtest_output_a90c02f7f60de2e37119417e0692d2c4a}} 
+\index{testOutput@{testOutput}!csvFileString@{csvFileString}}
+\index{csvFileString@{csvFileString}!testOutput@{testOutput}}
+\doxysubsubsection{\texorpdfstring{csvFileString}{csvFileString}}
+{\footnotesize\ttfamily stringstream test\+Output\+::csv\+File\+String}
+
+
+
+stringstream for the whole test output csv file 
+
+\mbox{\Hypertarget{structtest_output_a385995449db4987d82a805e03dbb9f94}\label{structtest_output_a385995449db4987d82a805e03dbb9f94}} 
+\index{testOutput@{testOutput}!csvSingleFile@{csvSingleFile}}
+\index{csvSingleFile@{csvSingleFile}!testOutput@{testOutput}}
+\doxysubsubsection{\texorpdfstring{csvSingleFile}{csvSingleFile}}
+{\footnotesize\ttfamily vector$<$stringstream$>$ test\+Output\+::csv\+Single\+File}
+
+
+
+vector of stringstreams for single test output csv files 
+
+\mbox{\Hypertarget{structtest_output_a50e63b51a8b87d3c61d4c769c33f9267}\label{structtest_output_a50e63b51a8b87d3c61d4c769c33f9267}} 
+\index{testOutput@{testOutput}!debugSingleOutput@{debugSingleOutput}}
+\index{debugSingleOutput@{debugSingleOutput}!testOutput@{testOutput}}
+\doxysubsubsection{\texorpdfstring{debugSingleOutput}{debugSingleOutput}}
+{\footnotesize\ttfamily int test\+Output\+::debug\+Single\+Output}
+
+
+
+tick value for when a single output file should be generated 
+
+\mbox{\Hypertarget{structtest_output_abc84d5c37b4bdac5618e594fc0c08a6f}\label{structtest_output_abc84d5c37b4bdac5618e594fc0c08a6f}} 
+\index{testOutput@{testOutput}!debugTick@{debugTick}}
+\index{debugTick@{debugTick}!testOutput@{testOutput}}
+\doxysubsubsection{\texorpdfstring{debugTick}{debugTick}}
+{\footnotesize\ttfamily int test\+Output\+::debug\+Tick}
+
+
+
+current tick (seconds) for test 
+
+\mbox{\Hypertarget{structtest_output_ab56acfb430edce0f7e8823873e951873}\label{structtest_output_ab56acfb430edce0f7e8823873e951873}} 
+\index{testOutput@{testOutput}!fileCounter@{fileCounter}}
+\index{fileCounter@{fileCounter}!testOutput@{testOutput}}
+\doxysubsubsection{\texorpdfstring{fileCounter}{fileCounter}}
+{\footnotesize\ttfamily int test\+Output\+::file\+Counter}
+
+
+
+counter for how many files are already written 
+
+\mbox{\Hypertarget{structtest_output_a97b8962dec4bb5f0e400ee405e1c473d}\label{structtest_output_a97b8962dec4bb5f0e400ee405e1c473d}} 
+\index{testOutput@{testOutput}!fileString@{fileString}}
+\index{fileString@{fileString}!testOutput@{testOutput}}
+\doxysubsubsection{\texorpdfstring{fileString}{fileString}}
+{\footnotesize\ttfamily stringstream test\+Output\+::file\+String}
+
+
+
+stringstream for the whole test output file 
+
+\mbox{\Hypertarget{structtest_output_a9d951744e91be8c4804231424b7a15b0}\label{structtest_output_a9d951744e91be8c4804231424b7a15b0}} 
+\index{testOutput@{testOutput}!inferenceTime@{inferenceTime}}
+\index{inferenceTime@{inferenceTime}!testOutput@{testOutput}}
+\doxysubsubsection{\texorpdfstring{inferenceTime}{inferenceTime}}
+{\footnotesize\ttfamily double test\+Output\+::inference\+Time}
+
+
+
+adds up the inference time for each frame to calculate the average inferance time 
+
+\mbox{\Hypertarget{structtest_output_a2f3b6ba984d92ae828c1e155e7648148}\label{structtest_output_a2f3b6ba984d92ae828c1e155e7648148}} 
+\index{testOutput@{testOutput}!MunchkinClassesNum@{MunchkinClassesNum}}
+\index{MunchkinClassesNum@{MunchkinClassesNum}!testOutput@{testOutput}}
+\doxysubsubsection{\texorpdfstring{MunchkinClassesNum}{MunchkinClassesNum}}
+{\footnotesize\ttfamily string test\+Output\+::\+Munchkin\+Classes\+Num}
+
+
+
+Number of munchkin classes (cards) that are used in the test. 
+
+\mbox{\Hypertarget{structtest_output_a427ad18372a271a60a677a428f5faab5}\label{structtest_output_a427ad18372a271a60a677a428f5faab5}} 
+\index{testOutput@{testOutput}!singleFile@{singleFile}}
+\index{singleFile@{singleFile}!testOutput@{testOutput}}
+\doxysubsubsection{\texorpdfstring{singleFile}{singleFile}}
+{\footnotesize\ttfamily vector$<$stringstream$>$ test\+Output\+::single\+File}
+
+
+
+vector of stringstreams for single test output files 
+
+\mbox{\Hypertarget{structtest_output_a9036df2e5a0215c4b22feb1576f1cfe3}\label{structtest_output_a9036df2e5a0215c4b22feb1576f1cfe3}} 
+\index{testOutput@{testOutput}!YoloName@{YoloName}}
+\index{YoloName@{YoloName}!testOutput@{testOutput}}
+\doxysubsubsection{\texorpdfstring{YoloName}{YoloName}}
+{\footnotesize\ttfamily string test\+Output\+::\+Yolo\+Name}
+
+
+
+name of yolo net that is tested 
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{common_8h}{common.\+h}}\end{DoxyCompactItemize}

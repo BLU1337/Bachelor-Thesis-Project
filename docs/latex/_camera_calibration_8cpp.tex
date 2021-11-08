@@ -1,0 +1,147 @@
+\hypertarget{_camera_calibration_8cpp}{}\doxysection{Camera\+Calibration.\+cpp File Reference}
+\label{_camera_calibration_8cpp}\index{CameraCalibration.cpp@{CameraCalibration.cpp}}
+{\ttfamily \#include $<$Camera\+Calibration.\+h$>$}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_camera_calibration_8cpp_af9b8c8b16592574f5169053a966a8494}{create\+Known\+Board\+Positions}} (Size board\+Size, float square\+Edge\+Length, vector$<$ Point3f $>$ \&corners)
+\begin{DoxyCompactList}\small\item\em creates known boards position for chessboard used to calibrate camera. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_camera_calibration_8cpp_a1c4284c68245c9e5ed4a4b1536596dee}{get\+Chessboard\+Corners}} (vector$<$ Mat $>$ images, vector$<$ vector$<$ Point2f $>$$>$ \&all\+Found\+Corners, bool show\+Results)
+\begin{DoxyCompactList}\small\item\em function to get chessboard corners from given images. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{_camera_calibration_8cpp_a35fd6079b9a81eb6cd1cdbae7c384cb0}{save\+Camera\+Calibration}} (string name, Mat camera\+Matrix, Mat distance\+Coefficients)
+\begin{DoxyCompactList}\small\item\em function to save camera calibration to calibration file. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{_camera_calibration_8cpp_a1fe43f5e2c9bbabeda7c16f8a9b56139}{load\+Camera\+Calibration}} (string name, Mat \&camera\+Matrix, Mat \&distance\+Coefficients)
+\begin{DoxyCompactList}\small\item\em function so load camera calibration from file \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_camera_calibration_8cpp_aaf81e9a774e6b9d6f5d6f63eaae70c04}{camera\+Calibration}} (vector$<$ Mat $>$ calibration\+Images, Size board\+Size, float square\+Edge\+Length, Mat \&camera\+Matrix, Mat \&distance\+Coefficients)
+\begin{DoxyCompactList}\small\item\em camera calibration function to process the actual camera calibration. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_camera_calibration_8cpp_acbff59eb4fc7d04a29afbe75d4612fd1}{camera\+Calibration\+Process}} (Mat \&camera\+Matrix, Mat \&distance\+Coefficients, Size \mbox{\hyperlink{main_8cpp_a886f4c6d2468a70151388f0e7ed06a06}{chessboard\+Dimensions}}, float \mbox{\hyperlink{main_8cpp_a33492ca6894acc3b9d146c33362af540}{calbiration\+Square\+Dimension}})
+\begin{DoxyCompactList}\small\item\em function to guide through the camera calibration process. Can take Pictures of chess board to calibrate camera with \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_camera_calibration_8cpp_aaf81e9a774e6b9d6f5d6f63eaae70c04}\label{_camera_calibration_8cpp_aaf81e9a774e6b9d6f5d6f63eaae70c04}} 
+\index{CameraCalibration.cpp@{CameraCalibration.cpp}!cameraCalibration@{cameraCalibration}}
+\index{cameraCalibration@{cameraCalibration}!CameraCalibration.cpp@{CameraCalibration.cpp}}
+\doxysubsubsection{\texorpdfstring{cameraCalibration()}{cameraCalibration()}}
+{\footnotesize\ttfamily void camera\+Calibration (\begin{DoxyParamCaption}\item[{vector$<$ Mat $>$}]{calibration\+Images,  }\item[{Size}]{board\+Size,  }\item[{float}]{square\+Edge\+Length,  }\item[{Mat \&}]{camera\+Matrix,  }\item[{Mat \&}]{distance\+Coefficients }\end{DoxyParamCaption})}
+
+
+
+camera calibration function to process the actual camera calibration. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em calibration\+Images} & vector of mat objects that store the calibration images. \\
+\hline
+{\em board\+Size} & size of chess board used to calibrate camera e.\+g 9x6 \\
+\hline
+{\em square\+Edge\+Length} & edge length of single square tile on calibration board \\
+\hline
+{\em camera\+Matrix} & reference of mat object for camera matrix to be stored in \\
+\hline
+{\em distance\+Coefficients} & reference of mat object for distance coefficients to be stored in \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_camera_calibration_8cpp_acbff59eb4fc7d04a29afbe75d4612fd1}\label{_camera_calibration_8cpp_acbff59eb4fc7d04a29afbe75d4612fd1}} 
+\index{CameraCalibration.cpp@{CameraCalibration.cpp}!cameraCalibrationProcess@{cameraCalibrationProcess}}
+\index{cameraCalibrationProcess@{cameraCalibrationProcess}!CameraCalibration.cpp@{CameraCalibration.cpp}}
+\doxysubsubsection{\texorpdfstring{cameraCalibrationProcess()}{cameraCalibrationProcess()}}
+{\footnotesize\ttfamily void camera\+Calibration\+Process (\begin{DoxyParamCaption}\item[{Mat \&}]{camera\+Matrix,  }\item[{Mat \&}]{distance\+Coefficients,  }\item[{Size}]{chessboard\+Dimensions,  }\item[{float}]{calbiration\+Square\+Dimension }\end{DoxyParamCaption})}
+
+
+
+function to guide through the camera calibration process. Can take Pictures of chess board to calibrate camera with 
+
+
+\begin{DoxyParams}{Parameters}
+{\em camera\+Matrix} & reference of mat object to store camera matrix in after calibration. \\
+\hline
+{\em distance\+Coefficients} & reference of mat object to store distance coefficients in after calibration. \\
+\hline
+{\em chessboard\+Dimensions} & size of chessboard dimensions e.\+g 9x6 \\
+\hline
+{\em calibration\+Square\+Dimensions} & edge length of single square tile on calibration board \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_camera_calibration_8cpp_af9b8c8b16592574f5169053a966a8494}\label{_camera_calibration_8cpp_af9b8c8b16592574f5169053a966a8494}} 
+\index{CameraCalibration.cpp@{CameraCalibration.cpp}!createKnownBoardPositions@{createKnownBoardPositions}}
+\index{createKnownBoardPositions@{createKnownBoardPositions}!CameraCalibration.cpp@{CameraCalibration.cpp}}
+\doxysubsubsection{\texorpdfstring{createKnownBoardPositions()}{createKnownBoardPositions()}}
+{\footnotesize\ttfamily void create\+Known\+Board\+Positions (\begin{DoxyParamCaption}\item[{Size}]{board\+Size,  }\item[{float}]{square\+Edge\+Length,  }\item[{vector$<$ Point3f $>$ \&}]{corners }\end{DoxyParamCaption})}
+
+
+
+creates known boards position for chessboard used to calibrate camera. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em board\+Size} & size of the calibration chess board. e.\+g 9x6 \\
+\hline
+{\em square\+Edge\+Length} & Square edge length of single calibration board tile. Needs to be meassured from printed chess board. \\
+\hline
+{\em corners} & reference of chessboard corners that are returned. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_camera_calibration_8cpp_a1c4284c68245c9e5ed4a4b1536596dee}\label{_camera_calibration_8cpp_a1c4284c68245c9e5ed4a4b1536596dee}} 
+\index{CameraCalibration.cpp@{CameraCalibration.cpp}!getChessboardCorners@{getChessboardCorners}}
+\index{getChessboardCorners@{getChessboardCorners}!CameraCalibration.cpp@{CameraCalibration.cpp}}
+\doxysubsubsection{\texorpdfstring{getChessboardCorners()}{getChessboardCorners()}}
+{\footnotesize\ttfamily void get\+Chessboard\+Corners (\begin{DoxyParamCaption}\item[{vector$<$ Mat $>$}]{images,  }\item[{vector$<$ vector$<$ Point2f $>$$>$ \&}]{all\+Found\+Corners,  }\item[{bool}]{show\+Result = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+function to get chessboard corners from given images. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em images} & Vector of Mat objects with calibration pictures of chessboard. \\
+\hline
+{\em all\+Found\+Corners} & vector with vector of Points that return all found corners of tiles inside the chessboard pictures. \\
+\hline
+{\em show\+Result} & bool of wether or not the results should be shown on the output image. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_camera_calibration_8cpp_a1fe43f5e2c9bbabeda7c16f8a9b56139}\label{_camera_calibration_8cpp_a1fe43f5e2c9bbabeda7c16f8a9b56139}} 
+\index{CameraCalibration.cpp@{CameraCalibration.cpp}!loadCameraCalibration@{loadCameraCalibration}}
+\index{loadCameraCalibration@{loadCameraCalibration}!CameraCalibration.cpp@{CameraCalibration.cpp}}
+\doxysubsubsection{\texorpdfstring{loadCameraCalibration()}{loadCameraCalibration()}}
+{\footnotesize\ttfamily bool load\+Camera\+Calibration (\begin{DoxyParamCaption}\item[{string}]{name,  }\item[{Mat \&}]{camera\+Matrix,  }\item[{Mat \&}]{distance\+Coefficients }\end{DoxyParamCaption})}
+
+
+
+function so load camera calibration from file 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & filepath for camera calibration file \\
+\hline
+{\em camera\+Matrix} & reference to mat object to store camera matrix in and return camera matrix. \\
+\hline
+{\em distance\+Coefficients} & reference to mat object to store distance coefficients in and return them. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true =$>$ file could be opened and camera matrix was loaded; false =$>$ file could not be opened. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_camera_calibration_8cpp_a35fd6079b9a81eb6cd1cdbae7c384cb0}\label{_camera_calibration_8cpp_a35fd6079b9a81eb6cd1cdbae7c384cb0}} 
+\index{CameraCalibration.cpp@{CameraCalibration.cpp}!saveCameraCalibration@{saveCameraCalibration}}
+\index{saveCameraCalibration@{saveCameraCalibration}!CameraCalibration.cpp@{CameraCalibration.cpp}}
+\doxysubsubsection{\texorpdfstring{saveCameraCalibration()}{saveCameraCalibration()}}
+{\footnotesize\ttfamily bool save\+Camera\+Calibration (\begin{DoxyParamCaption}\item[{string}]{name,  }\item[{Mat}]{camera\+Matrix,  }\item[{Mat}]{distance\+Coefficients }\end{DoxyParamCaption})}
+
+
+
+function to save camera calibration to calibration file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & name for the filepath to store camera matrix in \\
+\hline
+{\em camera\+Matrix} & calculated camera matrix mat object to store inside calibration file \\
+\hline
+{\em distance\+Coefficients} & distance coefficients that are also stored within the camera calibration file \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true =$>$ file was saved successfully; false =$>$ file could not be created; 
+\end{DoxyReturn}

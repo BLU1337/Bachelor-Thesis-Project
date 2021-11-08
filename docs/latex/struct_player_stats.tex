@@ -1,0 +1,217 @@
+\hypertarget{struct_player_stats}{}\doxysection{Player\+Stats Struct Reference}
+\label{struct_player_stats}\index{PlayerStats@{PlayerStats}}
+
+
+Holds data of player stats.  
+
+
+
+
+{\ttfamily \#include $<$Game\+State.\+h$>$}
+
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{struct_player_stats_af629795a4050a084749967b7ff272515}{sex}}
+\begin{DoxyCompactList}\small\item\em sex of player (male/female) \end{DoxyCompactList}\item 
+vector$<$ string $>$ \mbox{\hyperlink{struct_player_stats_a2c6301019cd8696643b0ea6ea9357400}{bonis}}
+\begin{DoxyCompactList}\small\item\em bonis for player that are gained through different cards e.\+g. munchkin class \end{DoxyCompactList}\item 
+vector$<$ string $>$ \mbox{\hyperlink{struct_player_stats_a638a3c2bd653d932c7b78ef5d7c2643f}{curses}}
+\begin{DoxyCompactList}\small\item\em permanent curses that are a burden for the player \end{DoxyCompactList}\item 
+vector$<$ string $>$ \mbox{\hyperlink{struct_player_stats_a7582f3d5a14903d952bdc5cbcfebc41f}{item\+Effects}}
+\begin{DoxyCompactList}\small\item\em effects of different items that are supporting the player e.\+g. attack with fire \end{DoxyCompactList}\item 
+vector$<$ string $>$ \mbox{\hyperlink{struct_player_stats_a13bb894e5a77e1ae3c4c954ea598747b}{munch\+Classes}}
+\begin{DoxyCompactList}\small\item\em munchkin classes the player optained \end{DoxyCompactList}\item 
+vector$<$ string $>$ \mbox{\hyperlink{struct_player_stats_a4178e62ce4dfc0d7bbfc814d257d14ef}{munch\+Races}}
+\begin{DoxyCompactList}\small\item\em munchkin races the player optained \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{struct_player_stats_a81b8a1444a9e1b2b6c69a7405f363c4f}{lvl}}
+\begin{DoxyCompactList}\small\item\em level of the player \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{struct_player_stats_a8f9a1c4507d151edbd39a9f5fdbd9a72}{strength}}
+\begin{DoxyCompactList}\small\item\em strength of a player through his equipment \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{struct_player_stats_ae1455ad27322670da2ac271265ca412e}{hands}}
+\begin{DoxyCompactList}\small\item\em how many hands player has left that are not holding an object \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{struct_player_stats_a4b92e4b118f2cc97b0e4bf9e259e1fdd}{run\+Strength}}
+\begin{DoxyCompactList}\small\item\em dice roll hat to be larger than x for the player to run away \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{struct_player_stats_aeccd104189cf3b7acbb2358f42ddf354}{available\+Classes}}
+\begin{DoxyCompactList}\small\item\em how many classes can the player optain \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{struct_player_stats_a3e018c95d0e959e8358a0d4568e683a2}{available\+Races}}
+\begin{DoxyCompactList}\small\item\em how many races can the player optain \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{struct_player_stats_a4499d84b153d8fcd007bed8361b149bb}{carries\+Large\+Items}}
+\begin{DoxyCompactList}\small\item\em wether or not the player carries a large item \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{struct_player_stats_aa207d2d327ce4c7e3b15d28af8e0bba2}{has\+Armor}}
+\begin{DoxyCompactList}\small\item\em wether or not the player carries an armor \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{struct_player_stats_ad3b520c94ad40e1a9c01cce540fc03b5}{has\+Hat}}
+\begin{DoxyCompactList}\small\item\em wether or not the player carries a hat \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{struct_player_stats_a47d0940330b51bcc40655528df0deae7}{has\+Shoes}}
+\begin{DoxyCompactList}\small\item\em wether or not the player carries shoes \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Holds data of player stats. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{struct_player_stats_aeccd104189cf3b7acbb2358f42ddf354}\label{struct_player_stats_aeccd104189cf3b7acbb2358f42ddf354}} 
+\index{PlayerStats@{PlayerStats}!availableClasses@{availableClasses}}
+\index{availableClasses@{availableClasses}!PlayerStats@{PlayerStats}}
+\doxysubsubsection{\texorpdfstring{availableClasses}{availableClasses}}
+{\footnotesize\ttfamily int Player\+Stats\+::available\+Classes}
+
+
+
+how many classes can the player optain 
+
+\mbox{\Hypertarget{struct_player_stats_a3e018c95d0e959e8358a0d4568e683a2}\label{struct_player_stats_a3e018c95d0e959e8358a0d4568e683a2}} 
+\index{PlayerStats@{PlayerStats}!availableRaces@{availableRaces}}
+\index{availableRaces@{availableRaces}!PlayerStats@{PlayerStats}}
+\doxysubsubsection{\texorpdfstring{availableRaces}{availableRaces}}
+{\footnotesize\ttfamily int Player\+Stats\+::available\+Races}
+
+
+
+how many races can the player optain 
+
+\mbox{\Hypertarget{struct_player_stats_a2c6301019cd8696643b0ea6ea9357400}\label{struct_player_stats_a2c6301019cd8696643b0ea6ea9357400}} 
+\index{PlayerStats@{PlayerStats}!bonis@{bonis}}
+\index{bonis@{bonis}!PlayerStats@{PlayerStats}}
+\doxysubsubsection{\texorpdfstring{bonis}{bonis}}
+{\footnotesize\ttfamily vector$<$string$>$ Player\+Stats\+::bonis}
+
+
+
+bonis for player that are gained through different cards e.\+g. munchkin class 
+
+\mbox{\Hypertarget{struct_player_stats_a4499d84b153d8fcd007bed8361b149bb}\label{struct_player_stats_a4499d84b153d8fcd007bed8361b149bb}} 
+\index{PlayerStats@{PlayerStats}!carriesLargeItems@{carriesLargeItems}}
+\index{carriesLargeItems@{carriesLargeItems}!PlayerStats@{PlayerStats}}
+\doxysubsubsection{\texorpdfstring{carriesLargeItems}{carriesLargeItems}}
+{\footnotesize\ttfamily bool Player\+Stats\+::carries\+Large\+Items}
+
+
+
+wether or not the player carries a large item 
+
+\mbox{\Hypertarget{struct_player_stats_a638a3c2bd653d932c7b78ef5d7c2643f}\label{struct_player_stats_a638a3c2bd653d932c7b78ef5d7c2643f}} 
+\index{PlayerStats@{PlayerStats}!curses@{curses}}
+\index{curses@{curses}!PlayerStats@{PlayerStats}}
+\doxysubsubsection{\texorpdfstring{curses}{curses}}
+{\footnotesize\ttfamily vector$<$string$>$ Player\+Stats\+::curses}
+
+
+
+permanent curses that are a burden for the player 
+
+\mbox{\Hypertarget{struct_player_stats_ae1455ad27322670da2ac271265ca412e}\label{struct_player_stats_ae1455ad27322670da2ac271265ca412e}} 
+\index{PlayerStats@{PlayerStats}!hands@{hands}}
+\index{hands@{hands}!PlayerStats@{PlayerStats}}
+\doxysubsubsection{\texorpdfstring{hands}{hands}}
+{\footnotesize\ttfamily int Player\+Stats\+::hands}
+
+
+
+how many hands player has left that are not holding an object 
+
+\mbox{\Hypertarget{struct_player_stats_aa207d2d327ce4c7e3b15d28af8e0bba2}\label{struct_player_stats_aa207d2d327ce4c7e3b15d28af8e0bba2}} 
+\index{PlayerStats@{PlayerStats}!hasArmor@{hasArmor}}
+\index{hasArmor@{hasArmor}!PlayerStats@{PlayerStats}}
+\doxysubsubsection{\texorpdfstring{hasArmor}{hasArmor}}
+{\footnotesize\ttfamily bool Player\+Stats\+::has\+Armor}
+
+
+
+wether or not the player carries an armor 
+
+\mbox{\Hypertarget{struct_player_stats_ad3b520c94ad40e1a9c01cce540fc03b5}\label{struct_player_stats_ad3b520c94ad40e1a9c01cce540fc03b5}} 
+\index{PlayerStats@{PlayerStats}!hasHat@{hasHat}}
+\index{hasHat@{hasHat}!PlayerStats@{PlayerStats}}
+\doxysubsubsection{\texorpdfstring{hasHat}{hasHat}}
+{\footnotesize\ttfamily bool Player\+Stats\+::has\+Hat}
+
+
+
+wether or not the player carries a hat 
+
+\mbox{\Hypertarget{struct_player_stats_a47d0940330b51bcc40655528df0deae7}\label{struct_player_stats_a47d0940330b51bcc40655528df0deae7}} 
+\index{PlayerStats@{PlayerStats}!hasShoes@{hasShoes}}
+\index{hasShoes@{hasShoes}!PlayerStats@{PlayerStats}}
+\doxysubsubsection{\texorpdfstring{hasShoes}{hasShoes}}
+{\footnotesize\ttfamily bool Player\+Stats\+::has\+Shoes}
+
+
+
+wether or not the player carries shoes 
+
+\mbox{\Hypertarget{struct_player_stats_a7582f3d5a14903d952bdc5cbcfebc41f}\label{struct_player_stats_a7582f3d5a14903d952bdc5cbcfebc41f}} 
+\index{PlayerStats@{PlayerStats}!itemEffects@{itemEffects}}
+\index{itemEffects@{itemEffects}!PlayerStats@{PlayerStats}}
+\doxysubsubsection{\texorpdfstring{itemEffects}{itemEffects}}
+{\footnotesize\ttfamily vector$<$string$>$ Player\+Stats\+::item\+Effects}
+
+
+
+effects of different items that are supporting the player e.\+g. attack with fire 
+
+\mbox{\Hypertarget{struct_player_stats_a81b8a1444a9e1b2b6c69a7405f363c4f}\label{struct_player_stats_a81b8a1444a9e1b2b6c69a7405f363c4f}} 
+\index{PlayerStats@{PlayerStats}!lvl@{lvl}}
+\index{lvl@{lvl}!PlayerStats@{PlayerStats}}
+\doxysubsubsection{\texorpdfstring{lvl}{lvl}}
+{\footnotesize\ttfamily int Player\+Stats\+::lvl}
+
+
+
+level of the player 
+
+\mbox{\Hypertarget{struct_player_stats_a13bb894e5a77e1ae3c4c954ea598747b}\label{struct_player_stats_a13bb894e5a77e1ae3c4c954ea598747b}} 
+\index{PlayerStats@{PlayerStats}!munchClasses@{munchClasses}}
+\index{munchClasses@{munchClasses}!PlayerStats@{PlayerStats}}
+\doxysubsubsection{\texorpdfstring{munchClasses}{munchClasses}}
+{\footnotesize\ttfamily vector$<$string$>$ Player\+Stats\+::munch\+Classes}
+
+
+
+munchkin classes the player optained 
+
+\mbox{\Hypertarget{struct_player_stats_a4178e62ce4dfc0d7bbfc814d257d14ef}\label{struct_player_stats_a4178e62ce4dfc0d7bbfc814d257d14ef}} 
+\index{PlayerStats@{PlayerStats}!munchRaces@{munchRaces}}
+\index{munchRaces@{munchRaces}!PlayerStats@{PlayerStats}}
+\doxysubsubsection{\texorpdfstring{munchRaces}{munchRaces}}
+{\footnotesize\ttfamily vector$<$string$>$ Player\+Stats\+::munch\+Races}
+
+
+
+munchkin races the player optained 
+
+\mbox{\Hypertarget{struct_player_stats_a4b92e4b118f2cc97b0e4bf9e259e1fdd}\label{struct_player_stats_a4b92e4b118f2cc97b0e4bf9e259e1fdd}} 
+\index{PlayerStats@{PlayerStats}!runStrength@{runStrength}}
+\index{runStrength@{runStrength}!PlayerStats@{PlayerStats}}
+\doxysubsubsection{\texorpdfstring{runStrength}{runStrength}}
+{\footnotesize\ttfamily int Player\+Stats\+::run\+Strength}
+
+
+
+dice roll hat to be larger than x for the player to run away 
+
+\mbox{\Hypertarget{struct_player_stats_af629795a4050a084749967b7ff272515}\label{struct_player_stats_af629795a4050a084749967b7ff272515}} 
+\index{PlayerStats@{PlayerStats}!sex@{sex}}
+\index{sex@{sex}!PlayerStats@{PlayerStats}}
+\doxysubsubsection{\texorpdfstring{sex}{sex}}
+{\footnotesize\ttfamily string Player\+Stats\+::sex}
+
+
+
+sex of player (male/female) 
+
+\mbox{\Hypertarget{struct_player_stats_a8f9a1c4507d151edbd39a9f5fdbd9a72}\label{struct_player_stats_a8f9a1c4507d151edbd39a9f5fdbd9a72}} 
+\index{PlayerStats@{PlayerStats}!strength@{strength}}
+\index{strength@{strength}!PlayerStats@{PlayerStats}}
+\doxysubsubsection{\texorpdfstring{strength}{strength}}
+{\footnotesize\ttfamily int Player\+Stats\+::strength}
+
+
+
+strength of a player through his equipment 
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_game_state_8h}{Game\+State.\+h}}\end{DoxyCompactItemize}

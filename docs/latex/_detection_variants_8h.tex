@@ -1,0 +1,93 @@
+\hypertarget{_detection_variants_8h}{}\doxysection{Detection\+Variants.\+h File Reference}
+\label{_detection_variants_8h}\index{DetectionVariants.h@{DetectionVariants.h}}
+
+
+multiple Detection Variants for Munchkin Tutorial  
+
+
+{\ttfamily \#include \char`\"{}opencv2/aruco.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}opencv2/dnn.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Game\+State.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Munchkin\+Cards.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$Post\+Process\+Functions.\+h$>$}\newline
+{\ttfamily \#include $<$common.\+h$>$}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{_detection_variants_8h_aef0a54774bd0d62fc97e535f3f62c60c}{YOLOMatching}} (Mat \&frame, const vector$<$ String $>$ \&\mbox{\hyperlink{main_8cpp_a2775deedf51bc51ca7463faba47dde68}{classes}}, float \mbox{\hyperlink{main_8cpp_a711d7904dea3bcd0214a53bae7deee54}{conf\+Threshold}}, float \mbox{\hyperlink{main_8cpp_a625fef19ed6b12fdb3983dee443efff3}{nms\+Threshold}}, \mbox{\hyperlink{struct_game_state}{Game\+State}} \&\mbox{\hyperlink{main_8cpp_a883c09b9dfb9aad43ca10ef2d7f6b717}{gamestate}}, const vector$<$ \mbox{\hyperlink{class_munchkin_card}{Munchkin\+Card}} $>$ \&\mbox{\hyperlink{main_8cpp_a79b8c8ce45e7d3aef25558104d994138}{cards}}, int \mbox{\hyperlink{main_8cpp_a1be885a5facca88e516dfb848a50e0c9}{modus}}, \mbox{\hyperlink{structtest_output}{test\+Output}} \&file\+Content)
+\begin{DoxyCompactList}\small\item\em Function to match Munchkincards via YOLO Neuronal Network. This function is based on online Tutorial by Sunita Nayak (\href{https://learnopencv.com/deep-learning-based-object-detection-using-yolov3-with-opencv-python-c}{\texttt{ https\+://learnopencv.\+com/deep-\/learning-\/based-\/object-\/detection-\/using-\/yolov3-\/with-\/opencv-\/python-\/c}}) \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_detection_variants_8h_a995be52ac538e3287bdeee2ad205f8cd}{Aruco\+Matching}} (Mat \&frame, \mbox{\hyperlink{struct_game_state}{Game\+State}} \&\mbox{\hyperlink{main_8cpp_a883c09b9dfb9aad43ca10ef2d7f6b717}{gamestate}}, Ptr$<$ aruco\+::\+Dictionary $>$ marker\+Dictionary, float aruco\+Square\+Dimensions, Mat camera\+Matrix, Mat distance\+Coefficients, vector$<$ \mbox{\hyperlink{class_munchkin_card}{Munchkin\+Card}} $>$ \mbox{\hyperlink{main_8cpp_a79b8c8ce45e7d3aef25558104d994138}{cards}})
+\begin{DoxyCompactList}\small\item\em function to use Aruco Markers as workaround for matching method. Part of practical project. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+multiple Detection Variants for Munchkin Tutorial 
+
+\begin{DoxyAuthor}{Author}
+Benjamin Lueben
+\end{DoxyAuthor}
+In this class multiple Detection Variants are implemented to detect Munchkin Cards. Detection Variants contain Aruco Markers, Template Matching and neuronal net matching with YOLO. 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_detection_variants_8h_a995be52ac538e3287bdeee2ad205f8cd}\label{_detection_variants_8h_a995be52ac538e3287bdeee2ad205f8cd}} 
+\index{DetectionVariants.h@{DetectionVariants.h}!ArucoMatching@{ArucoMatching}}
+\index{ArucoMatching@{ArucoMatching}!DetectionVariants.h@{DetectionVariants.h}}
+\doxysubsubsection{\texorpdfstring{ArucoMatching()}{ArucoMatching()}}
+{\footnotesize\ttfamily int Aruco\+Matching (\begin{DoxyParamCaption}\item[{Mat \&}]{frame,  }\item[{\mbox{\hyperlink{struct_game_state}{Game\+State}} \&}]{gamestate,  }\item[{Ptr$<$ aruco\+::\+Dictionary $>$}]{marker\+Dictionary,  }\item[{float}]{aruco\+Square\+Dimensions,  }\item[{Mat}]{camera\+Matrix,  }\item[{Mat}]{distance\+Coefficients,  }\item[{vector$<$ \mbox{\hyperlink{class_munchkin_card}{Munchkin\+Card}} $>$}]{cards }\end{DoxyParamCaption})}
+
+
+
+function to use Aruco Markers as workaround for matching method. Part of practical project. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em frame} & current frame of webcam input \\
+\hline
+{\em gamestate} & gamestate object which stores all necessary data for tutorial \\
+\hline
+{\em marker\+Dictionary} & aruco dictionary object of what aruco dictionary is used and needs to be detected \\
+\hline
+{\em aruco\+Square\+Dimensions} & dimension of aruco square that is printed onto the cards. Needs to be meassured. \\
+\hline
+{\em camera\+Matrix} & mat object of camera matrix which stores camera calibration needed for aruco markers to function \\
+\hline
+{\em distance\+Coefficients} & mat object of camera matrix which stores distance coefficients needed for aruco markers to function \\
+\hline
+{\em cards} & vector of munchkin cards object in which all cards are stored that can be detected with the tutorial. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if nothing failed.
+\end{DoxyReturn}
+\mbox{\Hypertarget{_detection_variants_8h_aef0a54774bd0d62fc97e535f3f62c60c}\label{_detection_variants_8h_aef0a54774bd0d62fc97e535f3f62c60c}} 
+\index{DetectionVariants.h@{DetectionVariants.h}!YOLOMatching@{YOLOMatching}}
+\index{YOLOMatching@{YOLOMatching}!DetectionVariants.h@{DetectionVariants.h}}
+\doxysubsubsection{\texorpdfstring{YOLOMatching()}{YOLOMatching()}}
+{\footnotesize\ttfamily int YOLOMatching (\begin{DoxyParamCaption}\item[{Mat \&}]{frame,  }\item[{const vector$<$ String $>$ \&}]{classes,  }\item[{float}]{conf\+Threshold,  }\item[{float}]{nms\+Threshold,  }\item[{\mbox{\hyperlink{struct_game_state}{Game\+State}} \&}]{gamestate,  }\item[{const vector$<$ \mbox{\hyperlink{class_munchkin_card}{Munchkin\+Card}} $>$ \&}]{cards,  }\item[{int}]{modus,  }\item[{\mbox{\hyperlink{structtest_output}{test\+Output}} \&}]{file\+Content }\end{DoxyParamCaption})}
+
+
+
+Function to match Munchkincards via YOLO Neuronal Network. This function is based on online Tutorial by Sunita Nayak (\href{https://learnopencv.com/deep-learning-based-object-detection-using-yolov3-with-opencv-python-c}{\texttt{ https\+://learnopencv.\+com/deep-\/learning-\/based-\/object-\/detection-\/using-\/yolov3-\/with-\/opencv-\/python-\/c}}) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em frame} & current frame of webcam input \\
+\hline
+{\em classes} & vector of class names that can be found by YOLO net \\
+\hline
+{\em conf\+Threshold} & threshold for confidence with which matches should be declared as valid/correct. \\
+\hline
+{\em nms\+Threshold} & Threshold for non-\/maximum suppression method to remove overlapping bounding boxes \\
+\hline
+{\em gamestate} & gamestate object which stores all necessary data for tutorial \\
+\hline
+{\em cards} & vector of munchkin cards object in which all cards are stored that can be detected with the tutorial. \\
+\hline
+{\em modus} & modus for yolo matching (1 =$>$ live tutorial; 2 =$>$ testing with class name and confidence displayed; 4 =$>$ testing withour class name and confidence displayed) \\
+\hline
+{\em file\+Content} & object of \mbox{\hyperlink{structtest_output}{test\+Output}} to store all data needed for testing \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if nothing failed.
+\end{DoxyReturn}

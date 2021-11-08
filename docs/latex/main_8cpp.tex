@@ -1,0 +1,236 @@
+\hypertarget{main_8cpp}{}\doxysection{main.\+cpp File Reference}
+\label{main_8cpp}\index{main.cpp@{main.cpp}}
+{\ttfamily \#include \char`\"{}opencv2/opencv.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}opencv2/imgcodecs.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}opencv2/imgproc.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}opencv2/highgui.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}opencv2/aruco.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}opencv2/calib3d.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}opencv2/video.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}opencv2/dnn.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}opencv2/videoio.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Game\+State.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Munchkin\+Cards.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Card\+Type\+Actions.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}common.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Button.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Aruco\+Generator.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Camera\+Calibration.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Detection\+Variants.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}YOLOData\+Generator.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$stdexcept$>$}\newline
+{\ttfamily \#include $<$unordered\+\_\+map$>$}\newline
+{\ttfamily \#include $<$functional$>$}\newline
+{\ttfamily \#include $<$random$>$}\newline
+{\ttfamily \#include $<$map$>$}\newline
+{\ttfamily \#include $<$iomanip$>$}\newline
+{\ttfamily \#include $<$cmath$>$}\newline
+{\ttfamily \#include $<$type\+\_\+traits$>$}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{main_8cpp_af96076cb1d7d6d1daac812d865cb5eff}{button\+\_\+exit}} (const \mbox{\hyperlink{class_button}{Button}} \&b)
+\item 
+void \mbox{\hyperlink{main_8cpp_af72fd86b1347b24c711c8f25d2797a12}{button\+\_\+continue}} (const \mbox{\hyperlink{class_button}{Button}} \&b)
+\item 
+void \mbox{\hyperlink{main_8cpp_ad023a4471122a0f616950a98a31ac483}{button\+\_\+end\+\_\+turn}} (const \mbox{\hyperlink{class_button}{Button}} \&b)
+\item 
+void \mbox{\hyperlink{main_8cpp_a891ab028bd00ce90bbf291a355410e1e}{logic}} ()
+\item 
+void \mbox{\hyperlink{main_8cpp_aeb44279d91bf1ed2c4f36733d7662c18}{call\+Back\+Function}} (int event, int x, int y, int flags, void $\ast$userdata)
+\item 
+int \mbox{\hyperlink{main_8cpp_ad4c8b1e6b8a17a8cc917a979411a011f}{Test\+YOLOMatching}} ()
+\item 
+int \mbox{\hyperlink{main_8cpp_a47bd9fe0d8855f97ceb45b7f22719135}{start\+Webcam\+Monitoring}} (const Mat \&camera\+Matrix, const Mat \&distance\+Coefficients, float aruco\+Square\+Dimensions)
+\item 
+int \mbox{\hyperlink{main_8cpp_a73d0180d33d0ef62fc6a10ca938118b2}{test\+Aruco\+Matching}} (const Mat \&camera\+Matrix, const Mat \&distance\+Coefficients, float aruco\+Square\+Dimensions)
+\item 
+int \mbox{\hyperlink{main_8cpp_a1c03069360f1f90a556eb537e0ff8a72}{main}} (int argv, char $\ast$$\ast$argc)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const float \mbox{\hyperlink{main_8cpp_a33492ca6894acc3b9d146c33362af540}{calbiration\+Square\+Dimension}} = 0.\+025f
+\item 
+const float \mbox{\hyperlink{main_8cpp_a9ceabfc754dc4e3412d57856b69f10e7}{aruco\+Square\+Dimension}} = 0.\+02f
+\item 
+const Size \mbox{\hyperlink{main_8cpp_a886f4c6d2468a70151388f0e7ed06a06}{chessboard\+Dimensions}} = Size(6, 9)
+\item 
+float \mbox{\hyperlink{main_8cpp_a711d7904dea3bcd0214a53bae7deee54}{conf\+Threshold}} = 0.\+7
+\item 
+float \mbox{\hyperlink{main_8cpp_a625fef19ed6b12fdb3983dee443efff3}{nms\+Threshold}} = 0.\+4
+\item 
+int \mbox{\hyperlink{main_8cpp_a1be885a5facca88e516dfb848a50e0c9}{modus}} = 2
+\item 
+int \mbox{\hyperlink{main_8cpp_ab7651a5a5bc538a31c9716fc65d06bb6}{debug\+Single\+Output}} = 5
+\item 
+bool \mbox{\hyperlink{main_8cpp_a0a12cd45a4425534573360dd3d3c6c5b}{multiple\+Tests}} = false
+\item 
+string \mbox{\hyperlink{main_8cpp_a1d37d32b9b93d51eb27160e0432e517f}{Yolo\+Name}} = \char`\"{}40-\/20k\char`\"{}
+\item 
+string \mbox{\hyperlink{main_8cpp_a4c870eca63f5eaf50a70226f3e6d17b9}{Munchkin\+Classes\+Num}} = \char`\"{}40\char`\"{}
+\item 
+string \mbox{\hyperlink{main_8cpp_ab9e36a99ae20db7ff7b5627ea066427a}{test\+Num}} = \char`\"{}3\char`\"{}
+\item 
+vector$<$ String $>$ \mbox{\hyperlink{main_8cpp_a2775deedf51bc51ca7463faba47dde68}{classes}}
+\item 
+vector$<$ \mbox{\hyperlink{class_munchkin_card}{Munchkin\+Card}} $>$ \mbox{\hyperlink{main_8cpp_a79b8c8ce45e7d3aef25558104d994138}{cards}}
+\item 
+std\+::unordered\+\_\+map$<$ \mbox{\hyperlink{_munchkin_cards_8h_a76b9e96d86b331202dcc0fba38b758cd}{Card\+Type}}, \mbox{\hyperlink{_card_type_actions_8h_ae1945ee3d2ca45a3c2cebe4b790f4094}{Card\+Type\+Func}} $>$ \mbox{\hyperlink{main_8cpp_a7ccc75f5c2b2439955a61e0a96457c6c}{funct\+Map}}
+\item 
+\mbox{\hyperlink{struct_game_state}{Game\+State}} \mbox{\hyperlink{main_8cpp_a883c09b9dfb9aad43ca10ef2d7f6b717}{gamestate}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{main_8cpp_af72fd86b1347b24c711c8f25d2797a12}\label{main_8cpp_af72fd86b1347b24c711c8f25d2797a12}} 
+\index{main.cpp@{main.cpp}!button\_continue@{button\_continue}}
+\index{button\_continue@{button\_continue}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{button\_continue()}{button\_continue()}}
+{\footnotesize\ttfamily void button\+\_\+continue (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_button}{Button}} \&}]{b }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{main_8cpp_ad023a4471122a0f616950a98a31ac483}\label{main_8cpp_ad023a4471122a0f616950a98a31ac483}} 
+\index{main.cpp@{main.cpp}!button\_end\_turn@{button\_end\_turn}}
+\index{button\_end\_turn@{button\_end\_turn}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{button\_end\_turn()}{button\_end\_turn()}}
+{\footnotesize\ttfamily void button\+\_\+end\+\_\+turn (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_button}{Button}} \&}]{b }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{main_8cpp_af96076cb1d7d6d1daac812d865cb5eff}\label{main_8cpp_af96076cb1d7d6d1daac812d865cb5eff}} 
+\index{main.cpp@{main.cpp}!button\_exit@{button\_exit}}
+\index{button\_exit@{button\_exit}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{button\_exit()}{button\_exit()}}
+{\footnotesize\ttfamily void button\+\_\+exit (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_button}{Button}} \&}]{b }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{main_8cpp_aeb44279d91bf1ed2c4f36733d7662c18}\label{main_8cpp_aeb44279d91bf1ed2c4f36733d7662c18}} 
+\index{main.cpp@{main.cpp}!callBackFunction@{callBackFunction}}
+\index{callBackFunction@{callBackFunction}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{callBackFunction()}{callBackFunction()}}
+{\footnotesize\ttfamily void call\+Back\+Function (\begin{DoxyParamCaption}\item[{int}]{event,  }\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{flags,  }\item[{void $\ast$}]{userdata }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{main_8cpp_a891ab028bd00ce90bbf291a355410e1e}\label{main_8cpp_a891ab028bd00ce90bbf291a355410e1e}} 
+\index{main.cpp@{main.cpp}!logic@{logic}}
+\index{logic@{logic}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{logic()}{logic()}}
+{\footnotesize\ttfamily void logic (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{main_8cpp_a1c03069360f1f90a556eb537e0ff8a72}\label{main_8cpp_a1c03069360f1f90a556eb537e0ff8a72}} 
+\index{main.cpp@{main.cpp}!main@{main}}
+\index{main@{main}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argv,  }\item[{char $\ast$$\ast$}]{argc }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{main_8cpp_a47bd9fe0d8855f97ceb45b7f22719135}\label{main_8cpp_a47bd9fe0d8855f97ceb45b7f22719135}} 
+\index{main.cpp@{main.cpp}!startWebcamMonitoring@{startWebcamMonitoring}}
+\index{startWebcamMonitoring@{startWebcamMonitoring}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{startWebcamMonitoring()}{startWebcamMonitoring()}}
+{\footnotesize\ttfamily int start\+Webcam\+Monitoring (\begin{DoxyParamCaption}\item[{const Mat \&}]{camera\+Matrix,  }\item[{const Mat \&}]{distance\+Coefficients,  }\item[{float}]{aruco\+Square\+Dimensions }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{main_8cpp_a73d0180d33d0ef62fc6a10ca938118b2}\label{main_8cpp_a73d0180d33d0ef62fc6a10ca938118b2}} 
+\index{main.cpp@{main.cpp}!testArucoMatching@{testArucoMatching}}
+\index{testArucoMatching@{testArucoMatching}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{testArucoMatching()}{testArucoMatching()}}
+{\footnotesize\ttfamily int test\+Aruco\+Matching (\begin{DoxyParamCaption}\item[{const Mat \&}]{camera\+Matrix,  }\item[{const Mat \&}]{distance\+Coefficients,  }\item[{float}]{aruco\+Square\+Dimensions }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{main_8cpp_ad4c8b1e6b8a17a8cc917a979411a011f}\label{main_8cpp_ad4c8b1e6b8a17a8cc917a979411a011f}} 
+\index{main.cpp@{main.cpp}!TestYOLOMatching@{TestYOLOMatching}}
+\index{TestYOLOMatching@{TestYOLOMatching}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{TestYOLOMatching()}{TestYOLOMatching()}}
+{\footnotesize\ttfamily int Test\+YOLOMatching (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{main_8cpp_a9ceabfc754dc4e3412d57856b69f10e7}\label{main_8cpp_a9ceabfc754dc4e3412d57856b69f10e7}} 
+\index{main.cpp@{main.cpp}!arucoSquareDimension@{arucoSquareDimension}}
+\index{arucoSquareDimension@{arucoSquareDimension}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{arucoSquareDimension}{arucoSquareDimension}}
+{\footnotesize\ttfamily const float aruco\+Square\+Dimension = 0.\+02f}
+
+\mbox{\Hypertarget{main_8cpp_a33492ca6894acc3b9d146c33362af540}\label{main_8cpp_a33492ca6894acc3b9d146c33362af540}} 
+\index{main.cpp@{main.cpp}!calbirationSquareDimension@{calbirationSquareDimension}}
+\index{calbirationSquareDimension@{calbirationSquareDimension}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{calbirationSquareDimension}{calbirationSquareDimension}}
+{\footnotesize\ttfamily const float calbiration\+Square\+Dimension = 0.\+025f}
+
+\mbox{\Hypertarget{main_8cpp_a79b8c8ce45e7d3aef25558104d994138}\label{main_8cpp_a79b8c8ce45e7d3aef25558104d994138}} 
+\index{main.cpp@{main.cpp}!cards@{cards}}
+\index{cards@{cards}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{cards}{cards}}
+{\footnotesize\ttfamily vector$<$\mbox{\hyperlink{class_munchkin_card}{Munchkin\+Card}}$>$ cards}
+
+\mbox{\Hypertarget{main_8cpp_a886f4c6d2468a70151388f0e7ed06a06}\label{main_8cpp_a886f4c6d2468a70151388f0e7ed06a06}} 
+\index{main.cpp@{main.cpp}!chessboardDimensions@{chessboardDimensions}}
+\index{chessboardDimensions@{chessboardDimensions}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{chessboardDimensions}{chessboardDimensions}}
+{\footnotesize\ttfamily const Size chessboard\+Dimensions = Size(6, 9)}
+
+\mbox{\Hypertarget{main_8cpp_a2775deedf51bc51ca7463faba47dde68}\label{main_8cpp_a2775deedf51bc51ca7463faba47dde68}} 
+\index{main.cpp@{main.cpp}!classes@{classes}}
+\index{classes@{classes}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{classes}{classes}}
+{\footnotesize\ttfamily vector$<$String$>$ classes}
+
+\mbox{\Hypertarget{main_8cpp_a711d7904dea3bcd0214a53bae7deee54}\label{main_8cpp_a711d7904dea3bcd0214a53bae7deee54}} 
+\index{main.cpp@{main.cpp}!confThreshold@{confThreshold}}
+\index{confThreshold@{confThreshold}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{confThreshold}{confThreshold}}
+{\footnotesize\ttfamily float conf\+Threshold = 0.\+7}
+
+\mbox{\Hypertarget{main_8cpp_ab7651a5a5bc538a31c9716fc65d06bb6}\label{main_8cpp_ab7651a5a5bc538a31c9716fc65d06bb6}} 
+\index{main.cpp@{main.cpp}!debugSingleOutput@{debugSingleOutput}}
+\index{debugSingleOutput@{debugSingleOutput}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{debugSingleOutput}{debugSingleOutput}}
+{\footnotesize\ttfamily int debug\+Single\+Output = 5}
+
+\mbox{\Hypertarget{main_8cpp_a7ccc75f5c2b2439955a61e0a96457c6c}\label{main_8cpp_a7ccc75f5c2b2439955a61e0a96457c6c}} 
+\index{main.cpp@{main.cpp}!functMap@{functMap}}
+\index{functMap@{functMap}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{functMap}{functMap}}
+{\footnotesize\ttfamily std\+::unordered\+\_\+map$<$\mbox{\hyperlink{_munchkin_cards_8h_a76b9e96d86b331202dcc0fba38b758cd}{Card\+Type}}, \mbox{\hyperlink{_card_type_actions_8h_ae1945ee3d2ca45a3c2cebe4b790f4094}{Card\+Type\+Func}}$>$ funct\+Map}
+
+\mbox{\Hypertarget{main_8cpp_a883c09b9dfb9aad43ca10ef2d7f6b717}\label{main_8cpp_a883c09b9dfb9aad43ca10ef2d7f6b717}} 
+\index{main.cpp@{main.cpp}!gamestate@{gamestate}}
+\index{gamestate@{gamestate}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{gamestate}{gamestate}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_game_state}{Game\+State}} gamestate}
+
+\mbox{\Hypertarget{main_8cpp_a1be885a5facca88e516dfb848a50e0c9}\label{main_8cpp_a1be885a5facca88e516dfb848a50e0c9}} 
+\index{main.cpp@{main.cpp}!modus@{modus}}
+\index{modus@{modus}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{modus}{modus}}
+{\footnotesize\ttfamily int modus = 2}
+
+\mbox{\Hypertarget{main_8cpp_a0a12cd45a4425534573360dd3d3c6c5b}\label{main_8cpp_a0a12cd45a4425534573360dd3d3c6c5b}} 
+\index{main.cpp@{main.cpp}!multipleTests@{multipleTests}}
+\index{multipleTests@{multipleTests}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{multipleTests}{multipleTests}}
+{\footnotesize\ttfamily bool multiple\+Tests = false}
+
+\mbox{\Hypertarget{main_8cpp_a4c870eca63f5eaf50a70226f3e6d17b9}\label{main_8cpp_a4c870eca63f5eaf50a70226f3e6d17b9}} 
+\index{main.cpp@{main.cpp}!MunchkinClassesNum@{MunchkinClassesNum}}
+\index{MunchkinClassesNum@{MunchkinClassesNum}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{MunchkinClassesNum}{MunchkinClassesNum}}
+{\footnotesize\ttfamily string Munchkin\+Classes\+Num = \char`\"{}40\char`\"{}}
+
+\mbox{\Hypertarget{main_8cpp_a625fef19ed6b12fdb3983dee443efff3}\label{main_8cpp_a625fef19ed6b12fdb3983dee443efff3}} 
+\index{main.cpp@{main.cpp}!nmsThreshold@{nmsThreshold}}
+\index{nmsThreshold@{nmsThreshold}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{nmsThreshold}{nmsThreshold}}
+{\footnotesize\ttfamily float nms\+Threshold = 0.\+4}
+
+\mbox{\Hypertarget{main_8cpp_ab9e36a99ae20db7ff7b5627ea066427a}\label{main_8cpp_ab9e36a99ae20db7ff7b5627ea066427a}} 
+\index{main.cpp@{main.cpp}!testNum@{testNum}}
+\index{testNum@{testNum}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{testNum}{testNum}}
+{\footnotesize\ttfamily string test\+Num = \char`\"{}3\char`\"{}}
+
+\mbox{\Hypertarget{main_8cpp_a1d37d32b9b93d51eb27160e0432e517f}\label{main_8cpp_a1d37d32b9b93d51eb27160e0432e517f}} 
+\index{main.cpp@{main.cpp}!YoloName@{YoloName}}
+\index{YoloName@{YoloName}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{YoloName}{YoloName}}
+{\footnotesize\ttfamily string Yolo\+Name = \char`\"{}40-\/20k\char`\"{}}
+
